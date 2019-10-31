@@ -1,0 +1,35 @@
+/* custom.css */
+
+main .jumbotron{
+	background-color: white;
+}
+
+#project-cards .card-img-top{
+	object-fit: fill;
+	height: 200px
+}
+
+.box-shadow{
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)
+}
+
+.image-rounded{
+	border-radius: 4px;
+	border: 1px #eee solid;
+}
+
+.calendar-not-available{
+	background-color: #eee;
+}
+
+.calendar-text{
+	font-size: 1.5rem;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+footer{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
