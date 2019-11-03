@@ -26,13 +26,13 @@
 
 
 		<main>
-			hello world
+			
 		</main>
 
 
 
 		<footer>
-			
+			<?php include("includes/footer.html"); ?>
 		</footer>
 
 
