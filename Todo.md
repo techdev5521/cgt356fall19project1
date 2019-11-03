@@ -1,20 +1,21 @@
 # To Do
 
 ## Infrastructure
-- [ ] LEMP Stack
-- [ ] phpmyadmin
-- [ ] Initialize the database
-	- [ ] Creating a database
+- [x] LEMP Stack
+- [x] phpmyadmin
+- [x] Initialize the database
+	- [x] Creating a database
 	- [ ] Creating needed table(s)
-	- [ ] Creating users w/ appropriate permissions
-- [ ] Configure GitHub
-- [ ] Configure SFTP
+	- [x] Creating users w/ appropriate permissions
+- [x] Configure GitHub
+- [x] Configure SFTP
 
 ## Shared Resources
-- [ ] General Nav
-- [ ] Account Nav
-- [ ] Footer
-- [ ] Database Opener/Closer
+- [ ] Homepage Nav	(Kai)
+- [ ] Login/Signup Nav	(Kai)
+- [ ] Account Nav	(Trent)
+- [ ] Footer	(Trent)
+- [ ] Database Opener/Closer	(Justin)
 - [ ] Session Handler
 	- [ ] Starts Session
 	- [ ] Populated `$_SESSION` array
