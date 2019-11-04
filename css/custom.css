@@ -1,4 +1,5 @@
 /* custom.css */
+
 .logo_img{
     max-width: 100px;
     max-height: 80px;
@@ -25,6 +26,7 @@ a.logo_nav:hover {
     width: 100%;
     color: gold;
     text-align: center;
+}
 
 /* Adds a sublt box shadow to any block element */
 .box-shadow{
