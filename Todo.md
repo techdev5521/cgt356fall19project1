@@ -24,7 +24,7 @@
 - [ ] Login/Logout Functions
 
 ## Individual Pages
-- [ ] Index
+- [x] Index
 - [ ] Create account page(s)
 - [ ] doCreateAccount
 - [ ] Login page
