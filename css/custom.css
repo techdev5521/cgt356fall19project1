@@ -1,1 +1,28 @@
 /* custom.css */
+
+/* Adds a sublt box shadow to any block element */
+.box-shadow{
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)
+}
+
+.game-banner{
+	min-height: 300px;
+}
+
+#modern-warfare{
+	background-image: url('../images/modern-warfare.jpeg');
+}
+
+#red-dead-redemption-2{
+	background-image: url('../images/red-dead-redemption.jpg');
+	background-size: cover;
+}
+
+#death-stranding{
+	background-image: url('../images/death-stranding.jpg');
+}
+
+.game-text-overlay{
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.75) 55%, rgba(0,0,0,0) 100%);;
+	color: white;
+}
