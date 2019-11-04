@@ -65,3 +65,12 @@ a.logo_nav:hover {
 	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.75) 55%, rgba(0,0,0,0) 100%);;
 	color: white;
 }
+
+@media (max-width: 576px) {
+	.footer{position: relative;}
+}
+
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}

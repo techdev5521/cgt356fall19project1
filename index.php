@@ -69,6 +69,9 @@
 		<!-- Bootstrap JavaScript -->
 		<?php include('includes/bootstrap_javascript.html') ?>
 
+		<!-- JS Libraries -->
+		<?php include('includes/jsLibs.html'); ?>
+
 	</body>
 
 
