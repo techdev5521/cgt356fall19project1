@@ -1,1 +1,28 @@
 /* custom.css */
+.logo_img{
+    max-width: 100px;
+    max-height: 80px;
+    display: inline;
+}
+
+.logo_nav{
+    display: inline;
+    color: gold;
+}
+
+a.logo_nav:hover {
+    text-decoration: none;
+    color: gold;
+}
+.bg-black{
+    background-color: #000000;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: gold;
+    text-align: center;
+}

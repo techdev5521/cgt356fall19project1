@@ -19,14 +19,13 @@
 		
 		<header>
 			<!-- Navigation -->
-			<?php include('includes/navigation.html');
-            include('includes/logo_nav.html');?>
+			<?php include('includes/navigation.php');?>
 		</header>
 
 
 
 		<main>
-			
+
 		</main>
 
 
