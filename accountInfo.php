@@ -2,7 +2,7 @@
 <html lang="em-US">
 
 <head>
-    <title>Login</title>
+    <title>Account Info</title>
 
     <!-- Metadata-->
     <?php include('includes/meta.html'); ?>
