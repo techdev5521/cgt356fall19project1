@@ -19,7 +19,8 @@
 		
 		<header>
 			<!-- Navigation -->
-			<?php include('includes/navigation.html'); ?>
+			<?php include('includes/navigation.html');
+            include('includes/logo_nav.html');?>
 		</header>
 
 
