@@ -2,11 +2,11 @@
 // Starts PHP session and initialized $_SESSION superglobal.
 session_start();
 
-//Metadata
+        //Metadata
 		include('includes/meta.html');
 
-		 //CSS
-		 include('includes/css.html');
+		//CSS
+		include('includes/css.html');
 
 		//PHP Libraries
 		include('includes/phpLibs.html');
@@ -31,7 +31,6 @@ session_start();
                 <br>
             </div>
         </div>
-
 
         <?php
         // If $_SESSION['errorMessage'] is set, echo error message.
@@ -137,7 +136,5 @@ session_start();
     document.getElementById("billingName").focus();
 </script>
 
-<!-- Footer -->
-<?php //include('../includes/footer.html'); ?>
 </body>
 </html>

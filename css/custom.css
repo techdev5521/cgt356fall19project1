@@ -1,31 +1,38 @@
 /* custom.css */
 
 .logo_img{
-    max-width: 100px;
-    max-height: 80px;
-    display: inline;
+	max-width: 100px;
+	max-height: 80px;
+	display: inline;
 }
 
 .logo_nav{
-    display: inline;
-    color: gold;
+	display: inline;
+	color: gold;
 }
 
 a.logo_nav:hover {
-    text-decoration: none;
-    color: gold;
-}
-.bg-black{
-    background-color: #000000;
+	text-decoration: none;
+	color: gold;
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: gold;
-    text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: gold;
+	text-align: center;
+}
+
+.footer a {
+	text-decoration: none;
+	color: gold;
+}
+
+.footer a:hover{
+	color: white;
+	font-weight: bold;
 }
 
 /* Adds a sublt box shadow to any block element */
