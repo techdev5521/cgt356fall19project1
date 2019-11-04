@@ -11,10 +11,10 @@
 				<li class="nav-item active">
 					<div class="form-inline my-2 my-lg-0">
 						<?php
-                        if (0) { //if logged in
+                        if (1) { //if logged out
 							echo("<button class=\"btn btn-light mr-2\" type=\"button\" onclick=\"window.location.href = 'login.php';\">Login</button>");
 							echo("<button class=\"btn btn-light ml-2\" type=\"button\" onclick=\"window.location.href = 'signup.php';\">Sign Up</button>");
-						}else { //If logged out
+						}else { //If logged in
                             echo("<button class=\"btn btn-light mr-2\" type=\"button\" onclick=\"window.location.href = '#';\">Account information</button>");
                             echo("<button class=\"btn btn-light ml-2\" type=\"button\" onclick=\"window.location.href = '#';\">Log out</button>}");
                         }
