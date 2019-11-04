@@ -28,6 +28,10 @@
 			<section id="header" class="jumbotron text-center">
 				<div class="container">
 					<h1 class="jumbotron-heading">Welcome to GameGo</h1>
+					<p class="lead text-muted">Playing With Power</p>
+				</div>
+			</section>
+
 			<div class="container">
 				
 				<div class="row my-5 game-banner" id="modern-warfare">
