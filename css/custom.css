@@ -16,6 +16,10 @@ a.logo_nav:hover {
 	color: gold;
 }
 
+.navbar-brand {
+	font-size: 1.25em;
+}
+
 .footer {
 	position: fixed;
 	left: 0;
