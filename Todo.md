@@ -11,8 +11,8 @@
 - [x] Configure SFTP
 
 ## Shared Resources
-- [ ] Homepage Nav	(Kai)
-- [ ] Login/Signup Nav	(Kai)
+- [x] Homepage Nav	(Kai)
+- [x] Login/Signup Nav	(Kai)
 - [ ] Account Nav	(Trent)
 - [ ] Footer	(Trent)
 - [ ] Database Opener/Closer	(Justin)
@@ -24,7 +24,7 @@
 - [ ] Login/Logout Functions
 
 ## Individual Pages
-- [ ] Index
+- [x] Index
 - [ ] Create account page(s)
 - [ ] doCreateAccount
 - [ ] Login page
