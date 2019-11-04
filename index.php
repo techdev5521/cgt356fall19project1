@@ -19,7 +19,7 @@
 		
 		<header>
 			<!-- Navigation -->
-			<?php include('includes/navigation.html'); ?>
+			<?php include('includes/navigation.php'); ?>
 		</header>
 
 
