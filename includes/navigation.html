@@ -2,20 +2,26 @@
 
 <div class="navbar navbar-expand-lg navbar-dark bg-dark box-shadow">
 	<nav class="container d-flex justify-content-between">
-		<a class="navbar-brand" href="index.php">
-			<strong>GameGo</strong>
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<a class="navbar-brand" href="#">GameGo</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-				<!-- Lookup Bootstrap Nav Pull Right for buttons -->
-				<a class="nav-item nav-link" href="#">#</a>
-				<button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="window.location.href = 'https://www.youtube.com/';">Login</button>
-			</div>
-	  </div>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<div class="form-inline my-2 my-lg-0">
+						if(0=0){ <!-- if logged in -->
+							<button class="btn btn-light mr-2" type="button" onclick="window.location.href = 'login.php';">Login</button>
+							<button class="btn btn-light ml-2" type="button" onclick="window.location.href = 'signup.php';">Sign Up</button>
+						}else{   <!-- If logged out -->
+							<button class="btn btn-light mr-2" type="button" onclick="window.location.href = '#';">Account information</button>
+							<button class="btn btn-light ml-2" type="button" onclick="window.location.href = '#';">Log out</button>
+						}
+					</div>
+				</li>
+			</ul>
+		</div>
 	</nav>
 </div>
-
 <!-- End navigation.html -->
