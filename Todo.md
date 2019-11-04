@@ -28,6 +28,7 @@
 - [ ] Create account page(s)
 - [ ] doCreateAccount
 - [ ] Login page
+    - [ ] Fix the double box thing
 - [ ] doLogin
 - [ ] Account info
 - [ ] Account info update(s)
