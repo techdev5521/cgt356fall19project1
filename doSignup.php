@@ -101,6 +101,9 @@
 	// Close database connection
 	include("includes/closeDBConn.php");
 
+	// Set temporary username variable for redirect
+	$username = returnSessionVariable("username");
+
 	// Destroy Session
 	foreach ($_SESSION as $key => $value) {
 		$_SESSION[$key] = "";
@@ -109,6 +112,6 @@
 	session_destroy();
 
 	// Redirect to Login page
-	header("Location:login.php?signup=yes");
+	header("Location:login.php?signupSuccessful=true&username=" . $username);
 
 ?>

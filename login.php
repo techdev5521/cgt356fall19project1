@@ -26,12 +26,26 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 my-5">
+
+					<!-- Display success message if signup successful. -->
+					<?php if (!empty($_GET['signupSuccessful'])) {
+						if ($_GET['signupSuccessful']) {
+							echo("<div class=\"alert alert-success text-center\" role=\"alert\">Your account was created successfully. Please login.</div>");
+						}
+					} ?>
+
 					<div class="card my-5 box-shadow px-3 py-4 bg-light">
 						<form action="doLogin.php" method="POST" class="form-signin mx-5 my-4">
 							<h2 class="text-center">Please Login</h2>
 							
 							<div class="form-group my-4">
-								<input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+								<!-- Autopopulate username if coming from successful signup -->
+								<?php if (!empty($_GET['signupSuccessful'] && !empty($_GET['username']))) {
+									if ($_GET['signupSuccessful']) {
+										$username = $_GET['username'];
+									}
+								} ?>
+								<input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?php if(!empty($username)) {echo($username);} ?>" required>
 							</div>
 
 							<div class="form-group my-4">
