@@ -18,6 +18,7 @@
                     }
                     ?>
                     <button class="btn btn-light mr-2" type="button" onclick="window.location.href = 'readme.php';">Read Me</button>
+                    <!-- <a class="btn btn-light mr-2" type="button" href="readme.php">Read Me</a> -->
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
