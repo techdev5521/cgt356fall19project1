@@ -121,14 +121,14 @@
 								// for($i = 1; $i <= $result->num_rows; $i++){
 									// $row = $result->fetch_assoc();
 									
-									echo("<tr>");
-									echo("<td>" . trim($row['UniqueID']) . "</td>");
-									echo("<td>" . trim($row['Name']) . "</td>");
-									echo("<td>" . trim($row['Color']) . "</td>");
-									echo("<td>" . trim($row['Role']) . "</td>");
-									echo("<td>" . trim($row['KillCount']) . "</td>");
-									echo("</tr>");
-								}
+								// 	echo("<tr>");
+								// 	echo("<td>" . trim($row['UniqueID']) . "</td>");
+								// 	echo("<td>" . trim($row['Name']) . "</td>");
+								// 	echo("<td>" . trim($row['Color']) . "</td>");
+								// 	echo("<td>" . trim($row['Role']) . "</td>");
+								// 	echo("<td>" . trim($row['KillCount']) . "</td>");
+								// 	echo("</tr>");
+								// }
 
 							?>
 						</tbody>
