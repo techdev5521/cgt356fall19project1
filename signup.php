@@ -1,3 +1,10 @@
+<?php 
+
+	// Start Session
+	session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="em-US">
 	
@@ -39,14 +46,14 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="firstName">First Name</label>
-										<input type="text" name="firstName" id="firstName" class="form-control" required>
+										<input type="text" name="firstName" id="firstName" class="form-control" value="<?php getSessionVariable("firstName"); ?>" required>
 									</div>
 								</div>
 								
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="lastName">Last Name</label>
-										<input type="text" name="lastName" id="lastName" class="form-control" required>
+										<input type="text" name="lastName" id="lastName" class="form-control" value="<?php getSessionVariable("lastName"); ?>" required>
 									</div>
 								</div>
 							</div>
@@ -55,14 +62,14 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" class="form-control" required>
+										<input type="email" name="email" id="email" class="form-control" value="<?php getSessionVariable("email"); ?>" required>
 									</div>
 								</div>
 								
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="phone">Phone</label>
-										<input type="tel" name="phone" id="phone" class="form-control" required>
+										<input type="tel" name="phone" id="phone" class="form-control" value="<?php getSessionVariable("phone"); ?>" required>
 									</div>
 								</div>
 							</div>
@@ -74,7 +81,7 @@
 								<div class="col-md-4">
 									<div class="form-group">
 										<label for="username">Username</label>
-										<input type="text" name="username" id="username" class="form-control" required>
+										<input type="text" name="username" id="username" class="form-control" value="<?php getSessionVariable("username"); ?>" required>
 									</div>
 								</div>
 
@@ -107,17 +114,17 @@
 												<div class="col-md-8">
 													<div class="form-group">
 														<label for="cardNumber">Card Number</label>
-														<input type="number" name="cardNumber" id="cardNumber" class="form-control" required>
+														<input type="number" name="cardNumber" id="cardNumber" class="form-control" value="<?php getSessionVariable("cardNumber"); ?>" required>
 													</div>
 												</div>
 												<div class="col-md-4">
 													<div class="form-group">
 														<label for="cardType">Card Type</label>
 														<select name="cardType" id="cardType" class="form-control">
-															<option value="Discover">Visa</option>
-															<option value="Mastercard">Mastercard</option>
-															<option value="American Express">American Express</option>
-															<option value="Discover">Discover</option>
+															<option <?php if(getSessionVariable("cardType") == "Visa") { echo("selected"); } ?> value="Visa">Visa</option>
+															<option <?php if(getSessionVariable("cardType") == "Mastercard") { echo("selected"); } ?> value="Mastercard">Mastercard</option>
+															<option <?php if(getSessionVariable("cardType") == "American Express") { echo("selected"); } ?> value="American Express">American Express</option>
+															<option <?php if(getSessionVariable("cardType") == "Discover") { echo("selected"); } ?> value="Discover">Discover</option>
 														</select>
 													</div>
 												</div>
@@ -127,18 +134,18 @@
 													<div class="form-group">
 														<label for="cardExpirationMonth">Month</label>
 														<select name="cardExpirationMonth" id="cardExpirationMonth" class="form-control">
-															<option value="01">01</option>
-															<option value="02">02</option>
-															<option value="03">03</option>
-															<option value="04">04</option>
-															<option value="05">05</option>
-															<option value="06">06</option>
-															<option value="07">07</option>
-															<option value="08">08</option>
-															<option value="09">09</option>
-															<option value="10">10</option>
-															<option value="11">11</option>
-															<option value="12">12</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "01") { echo("selected"); } ?> value="01">01</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "02") { echo("selected"); } ?> value="02">02</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "03") { echo("selected"); } ?> value="03">03</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "04") { echo("selected"); } ?> value="04">04</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "05") { echo("selected"); } ?> value="05">05</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "06") { echo("selected"); } ?> value="06">06</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "07") { echo("selected"); } ?> value="07">07</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "08") { echo("selected"); } ?> value="08">08</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "09") { echo("selected"); } ?> value="09">09</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "10") { echo("selected"); } ?> value="10">10</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "11") { echo("selected"); } ?> value="11">11</option>
+															<option <?php if(getSessionVariable("cardExpirationMonth") == "12") { echo("selected"); } ?> value="12">12</option>
 														</select>
 													</div>
 												</div>
@@ -146,20 +153,20 @@
 													<div class="form-group">
 														<label for="cardExpirationYear">Year</label>
 														<select name="cardExpirationYear" id="cardExpirationYear" class="form-control">
-															<option value="19">19</option>
-															<option value="20">20</option>
-															<option value="21">21</option>
-															<option value="22">22</option>
-															<option value="23">23</option>
-															<option value="24">24</option>
-															<option value="25">25</option>
+															<option <?php if(getSessionVariable("cardExpirationYear") == "19") { echo("selected"); } ?> value="19">19</option>
+															<option <?php if(getSessionVariable("cardExpirationYear") == "20") { echo("selected"); } ?> value="20">20</option>
+															<option <?php if(getSessionVariable("cardExpirationYear") == "21") { echo("selected"); } ?> value="21">21</option>
+															<option <?php if(getSessionVariable("cardExpirationYear") == "22") { echo("selected"); } ?> value="22">22</option>
+															<option <?php if(getSessionVariable("cardExpirationYear") == "23") { echo("selected"); } ?> value="23">23</option>
+															<option <?php if(getSessionVariable("cardExpirationYear") == "24") { echo("selected"); } ?> value="24">24</option>
+															<option <?php if(getSessionVariable("cardExpirationYear") == "25") { echo("selected"); } ?> value="25">25</option>
 														</select>
 													</div>
 												</div>
 												<div class="col-md-4">
 													<div class="form-group">
 														<label for="cardCVV">CVV</label>
-														<input type="number" name="cardCVV" id="cardCVV" class="form-control" required>
+														<input type="number" name="cardCVV" id="cardCVV" class="form-control" value="<?php getSessionVariable("cardCVV"); ?>" required>
 													</div>
 												</div>
 											</div>
@@ -172,14 +179,14 @@
 										<div class="col-md-6">
 											<div class="form-group">
 												<label for="billingFirstName">First Name (as seen on card)</label>
-												<input type="text" name="billingFirstName" id="billingFirstName" class="form-control" required>
+												<input type="text" name="billingFirstName" id="billingFirstName" class="form-control" value="<?php getSessionVariable("billingFirstName"); ?>" required>
 											</div>
 										</div>
 										
 										<div class="col-md-6">
 											<div class="form-group">
 												<label for="billingLastName">Last Name (as seen on card)</label>
-												<input type="text" name="billingLastName" id="billingLastName" class="form-control" required>
+												<input type="text" name="billingLastName" id="billingLastName" class="form-control" value="<?php getSessionVariable("billingLastName"); ?>" required>
 											</div>
 										</div>
 									</div>
@@ -187,7 +194,7 @@
 										<div class="col-md-12">
 											<div class="form-group">
 												<label for="billingStreet">Street Address</label>
-												<input type="text" name="billingStreet" id="billingStreet" class="form-control" required>
+												<input type="text" name="billingStreet" id="billingStreet" class="form-control" value="<?php getSessionVariable("billingStreet"); ?>" required>
 											</div>
 										</div>
 									</div>
@@ -195,71 +202,72 @@
 										<div class="col-md-6">
 											<div class="form-group">
 												<label for="billingCity">City</label>
-												<input type="text" name="billingCity" id="billingCity" class="form-control" required>
+												<input type="text" name="billingCity" id="billingCity" class="form-control" value="<?php getSessionVariable("billingCity"); ?>" required>
 											</div>
 										</div>
 										<div class="col-md-2">
 											<div class="form-group">
 												<label for="billingState">State</label>
 												<select name="billingState" id="billingState" class="form-control" required>
-													<option value="AL">AL</option>
-													<option value="AK">AK</option>
-													<option value="AR">AR</option>	
-													<option value="AZ">AZ</option>
-													<option value="CA">CA</option>
-													<option value="CO">CO</option>
-													<option value="CT">CT</option>
-													<option value="DC">DC</option>
-													<option value="DE">DE</option>
-													<option value="FL">FL</option>
-													<option value="GA">GA</option>
-													<option value="HI">HI</option>
-													<option value="IA">IA</option>	
-													<option value="ID">ID</option>
-													<option value="IL">IL</option>
-													<option value="IN">IN</option>
-													<option value="KS">KS</option>
-													<option value="KY">KY</option>
-													<option value="LA">LA</option>
-													<option value="MA">MA</option>
-													<option value="MD">MD</option>
-													<option value="ME">ME</option>
-													<option value="MI">MI</option>
-													<option value="MN">MN</option>
-													<option value="MO">MO</option>	
-													<option value="MS">MS</option>
-													<option value="MT">MT</option>
-													<option value="NC">NC</option>	
-													<option value="NE">NE</option>
-													<option value="NH">NH</option>
-													<option value="NJ">NJ</option>
-													<option value="NM">NM</option>			
-													<option value="NV">NV</option>
-													<option value="NY">NY</option>
-													<option value="ND">ND</option>
-													<option value="OH">OH</option>
-													<option value="OK">OK</option>
-													<option value="OR">OR</option>
-													<option value="PA">PA</option>
-													<option value="RI">RI</option>
-													<option value="SC">SC</option>
-													<option value="SD">SD</option>
-													<option value="TN">TN</option>
-													<option value="TX">TX</option>
-													<option value="UT">UT</option>
-													<option value="VT">VT</option>
-													<option value="VA">VA</option>
-													<option value="WA">WA</option>
-													<option value="WI">WI</option>	
-													<option value="WV">WV</option>
-													<option value="WY">WY</option>
+													<?php $billingState = getSessionVariable("billingState"); ?>
+													<option <?php if($billingState == "AL") { echo("selected"); } ?> value="AL">AL</option>
+													<option <?php if(getSessionVariable("billingState") == "AK") { echo("selected"); } ?> value="AK">AK</option>
+													<option <?php if(getSessionVariable("billingState") == "AR") { echo("selected"); } ?> value="AR">AR</option>	
+													<option <?php if(getSessionVariable("billingState") == "AZ") { echo("selected"); } ?> value="AZ">AZ</option>
+													<option <?php if(getSessionVariable("billingState") == "CA") { echo("selected"); } ?> value="CA">CA</option>
+													<option <?php if(getSessionVariable("billingState") == "CO") { echo("selected"); } ?> value="CO">CO</option>
+													<option <?php if(getSessionVariable("billingState") == "CT") { echo("selected"); } ?> value="CT">CT</option>
+													<option <?php if(getSessionVariable("billingState") == "DC") { echo("selected"); } ?> value="DC">DC</option>
+													<option <?php if(getSessionVariable("billingState") == "DE") { echo("selected"); } ?> value="DE">DE</option>
+													<option <?php if(getSessionVariable("billingState") == "FL") { echo("selected"); } ?> value="FL">FL</option>
+													<option <?php if(getSessionVariable("billingState") == "GA") { echo("selected"); } ?> value="GA">GA</option>
+													<option <?php if(getSessionVariable("billingState") == "HI") { echo("selected"); } ?> value="HI">HI</option>
+													<option <?php if(getSessionVariable("billingState") == "IA") { echo("selected"); } ?> value="IA">IA</option>	
+													<option <?php if(getSessionVariable("billingState") == "ID") { echo("selected"); } ?> value="ID">ID</option>
+													<option <?php if(getSessionVariable("billingState") == "IL") { echo("selected"); } ?> value="IL">IL</option>
+													<option <?php if(getSessionVariable("billingState") == "IN") { echo("selected"); } ?> value="IN">IN</option>
+													<option <?php if(getSessionVariable("billingState") == "KS") { echo("selected"); } ?> value="KS">KS</option>
+													<option <?php if(getSessionVariable("billingState") == "KY") { echo("selected"); } ?> value="KY">KY</option>
+													<option <?php if(getSessionVariable("billingState") == "LA") { echo("selected"); } ?> value="LA">LA</option>
+													<option <?php if(getSessionVariable("billingState") == "MA") { echo("selected"); } ?> value="MA">MA</option>
+													<option <?php if(getSessionVariable("billingState") == "MD") { echo("selected"); } ?> value="MD">MD</option>
+													<option <?php if(getSessionVariable("billingState") == "ME") { echo("selected"); } ?> value="ME">ME</option>
+													<option <?php if(getSessionVariable("billingState") == "MI") { echo("selected"); } ?> value="MI">MI</option>
+													<option <?php if(getSessionVariable("billingState") == "MN") { echo("selected"); } ?> value="MN">MN</option>
+													<option <?php if(getSessionVariable("billingState") == "MO") { echo("selected"); } ?> value="MO">MO</option>	
+													<option <?php if(getSessionVariable("billingState") == "MS") { echo("selected"); } ?> value="MS">MS</option>
+													<option <?php if(getSessionVariable("billingState") == "MT") { echo("selected"); } ?> value="MT">MT</option>
+													<option <?php if(getSessionVariable("billingState") == "NC") { echo("selected"); } ?> value="NC">NC</option>	
+													<option <?php if(getSessionVariable("billingState") == "NE") { echo("selected"); } ?> value="NE">NE</option>
+													<option <?php if(getSessionVariable("billingState") == "NH") { echo("selected"); } ?> value="NH">NH</option>
+													<option <?php if(getSessionVariable("billingState") == "NJ") { echo("selected"); } ?> value="NJ">NJ</option>
+													<option <?php if(getSessionVariable("billingState") == "NM") { echo("selected"); } ?> value="NM">NM</option>			
+													<option <?php if(getSessionVariable("billingState") == "NV") { echo("selected"); } ?> value="NV">NV</option>
+													<option <?php if(getSessionVariable("billingState") == "NY") { echo("selected"); } ?> value="NY">NY</option>
+													<option <?php if(getSessionVariable("billingState") == "ND") { echo("selected"); } ?> value="ND">ND</option>
+													<option <?php if(getSessionVariable("billingState") == "OH") { echo("selected"); } ?> value="OH">OH</option>
+													<option <?php if(getSessionVariable("billingState") == "OK") { echo("selected"); } ?> value="OK">OK</option>
+													<option <?php if(getSessionVariable("billingState") == "OR") { echo("selected"); } ?> value="OR">OR</option>
+													<option <?php if(getSessionVariable("billingState") == "PA") { echo("selected"); } ?> value="PA">PA</option>
+													<option <?php if(getSessionVariable("billingState") == "RI") { echo("selected"); } ?> value="RI">RI</option>
+													<option <?php if(getSessionVariable("billingState") == "SC") { echo("selected"); } ?> value="SC">SC</option>
+													<option <?php if(getSessionVariable("billingState") == "SD") { echo("selected"); } ?> value="SD">SD</option>
+													<option <?php if(getSessionVariable("billingState") == "TN") { echo("selected"); } ?> value="TN">TN</option>
+													<option <?php if(getSessionVariable("billingState") == "TX") { echo("selected"); } ?> value="TX">TX</option>
+													<option <?php if(getSessionVariable("billingState") == "UT") { echo("selected"); } ?> value="UT">UT</option>
+													<option <?php if(getSessionVariable("billingState") == "VT") { echo("selected"); } ?> value="VT">VT</option>
+													<option <?php if(getSessionVariable("billingState") == "VA") { echo("selected"); } ?> value="VA">VA</option>
+													<option <?php if(getSessionVariable("billingState") == "WA") { echo("selected"); } ?> value="WA">WA</option>
+													<option <?php if(getSessionVariable("billingState") == "WI") { echo("selected"); } ?> value="WI">WI</option>	
+													<option <?php if(getSessionVariable("billingState") == "WV") { echo("selected"); } ?> value="WV">WV</option>
+													<option <?php if(getSessionVariable("billingState") == "WY") { echo("selected"); } ?> value="WY">WY</option>
 												</select>
 											</div>
 										</div>
 										<div class="col-md-4">
 											<div class="form-group">
 												<label for="billingZip">Zip Code</label>
-												<input type="number" name="billingZip" id="billingZip" class="form-control" required="">
+												<input type="number" name="billingZip" id="billingZip" class="form-control" value="<?php getSessionVariable("billingZip"); ?>" required="">
 											</div>
 										</div>
 									</div>
@@ -275,14 +283,14 @@
 										<div class="col-md-6">
 											<div class="form-group">
 												<label for="shippingFirstName">First Name</label>
-												<input type="text" name="shippingFirstName" id="shippingFirstName" class="form-control">
+												<input type="text" name="shippingFirstName" id="shippingFirstName" class="form-control" value="<?php getSessionVariable("shippingFirstName"); ?>" >
 											</div>
 										</div>
 										
 										<div class="col-md-6">
 											<div class="form-group">
 												<label for="shippingLastName">Last Name</label>
-												<input type="text" name="shippingLastName" id="shippingLastName" class="form-control">
+												<input type="text" name="shippingLastName" id="shippingLastName" class="form-control" value="<?php getSessionVariable("shippingLastName"); ?>" >
 											</div>
 										</div>
 									</div>
@@ -290,7 +298,7 @@
 										<div class="col-md-12">
 											<div class="form-group">
 												<label for="shippingStreet">Street Address</label>
-												<input type="text" name="shippingStreet" id="shippingStreet" class="form-control">
+												<input type="text" name="shippingStreet" id="shippingStreet" class="form-control" value="<?php getSessionVariable("shippingStreet"); ?>" >
 											</div>
 										</div>
 									</div>
@@ -298,71 +306,71 @@
 										<div class="col-md-6">
 											<div class="form-group">
 												<label for="shippingCity">City</label>
-												<input type="text" name="shippingCity" id="shippingCity" class="form-control">
+												<input type="text" name="shippingCity" id="shippingCity" class="form-control" value="<?php getSessionVariable("shippingCity"); ?>" >
 											</div>
 										</div>
 										<div class="col-md-2">
 											<div class="form-group">
 												<label for="shippingState">State</label>
 												<select name="shippingState" id="shippingState" class="form-control">
-													<option value="AL">AL</option>
-													<option value="AK">AK</option>
-													<option value="AR">AR</option>	
-													<option value="AZ">AZ</option>
-													<option value="CA">CA</option>
-													<option value="CO">CO</option>
-													<option value="CT">CT</option>
-													<option value="DC">DC</option>
-													<option value="DE">DE</option>
-													<option value="FL">FL</option>
-													<option value="GA">GA</option>
-													<option value="HI">HI</option>
-													<option value="IA">IA</option>	
-													<option value="ID">ID</option>
-													<option value="IL">IL</option>
-													<option value="IN">IN</option>
-													<option value="KS">KS</option>
-													<option value="KY">KY</option>
-													<option value="LA">LA</option>
-													<option value="MA">MA</option>
-													<option value="MD">MD</option>
-													<option value="ME">ME</option>
-													<option value="MI">MI</option>
-													<option value="MN">MN</option>
-													<option value="MO">MO</option>	
-													<option value="MS">MS</option>
-													<option value="MT">MT</option>
-													<option value="NC">NC</option>	
-													<option value="NE">NE</option>
-													<option value="NH">NH</option>
-													<option value="NJ">NJ</option>
-													<option value="NM">NM</option>			
-													<option value="NV">NV</option>
-													<option value="NY">NY</option>
-													<option value="ND">ND</option>
-													<option value="OH">OH</option>
-													<option value="OK">OK</option>
-													<option value="OR">OR</option>
-													<option value="PA">PA</option>
-													<option value="RI">RI</option>
-													<option value="SC">SC</option>
-													<option value="SD">SD</option>
-													<option value="TN">TN</option>
-													<option value="TX">TX</option>
-													<option value="UT">UT</option>
-													<option value="VT">VT</option>
-													<option value="VA">VA</option>
-													<option value="WA">WA</option>
-													<option value="WI">WI</option>	
-													<option value="WV">WV</option>
-													<option value="WY">WY</option>
+													<option <?php if(getSessionVariable("shippingState") == "AL") { echo("selected"); } ?> value="AL">AL</option>
+													<option <?php if(getSessionVariable("shippingState") == "AK") { echo("selected"); } ?> value="AK">AK</option>
+													<option <?php if(getSessionVariable("shippingState") == "AR") { echo("selected"); } ?> value="AR">AR</option>
+													<option <?php if(getSessionVariable("shippingState") == "AZ") { echo("selected"); } ?> value="AZ">AZ</option>
+													<option <?php if(getSessionVariable("shippingState") == "CA") { echo("selected"); } ?> value="CA">CA</option>
+													<option <?php if(getSessionVariable("shippingState") == "CO") { echo("selected"); } ?> value="CO">CO</option>
+													<option <?php if(getSessionVariable("shippingState") == "CT") { echo("selected"); } ?> value="CT">CT</option>
+													<option <?php if(getSessionVariable("shippingState") == "DC") { echo("selected"); } ?> value="DC">DC</option>
+													<option <?php if(getSessionVariable("shippingState") == "DE") { echo("selected"); } ?> value="DE">DE</option>
+													<option <?php if(getSessionVariable("shippingState") == "FL") { echo("selected"); } ?> value="FL">FL</option>
+													<option <?php if(getSessionVariable("shippingState") == "GA") { echo("selected"); } ?> value="GA">GA</option>
+													<option <?php if(getSessionVariable("shippingState") == "HI") { echo("selected"); } ?> value="HI">HI</option>
+													<option <?php if(getSessionVariable("shippingState") == "IA") { echo("selected"); } ?> value="IA">IA</option>
+													<option <?php if(getSessionVariable("shippingState") == "ID") { echo("selected"); } ?> value="ID">ID</option>
+													<option <?php if(getSessionVariable("shippingState") == "IL") { echo("selected"); } ?> value="IL">IL</option>
+													<option <?php if(getSessionVariable("shippingState") == "IN") { echo("selected"); } ?> value="IN">IN</option>
+													<option <?php if(getSessionVariable("shippingState") == "KS") { echo("selected"); } ?> value="KS">KS</option>
+													<option <?php if(getSessionVariable("shippingState") == "KY") { echo("selected"); } ?> value="KY">KY</option>
+													<option <?php if(getSessionVariable("shippingState") == "LA") { echo("selected"); } ?> value="LA">LA</option>
+													<option <?php if(getSessionVariable("shippingState") == "MA") { echo("selected"); } ?> value="MA">MA</option>
+													<option <?php if(getSessionVariable("shippingState") == "MD") { echo("selected"); } ?> value="MD">MD</option>
+													<option <?php if(getSessionVariable("shippingState") == "ME") { echo("selected"); } ?> value="ME">ME</option>
+													<option <?php if(getSessionVariable("shippingState") == "MI") { echo("selected"); } ?> value="MI">MI</option>
+													<option <?php if(getSessionVariable("shippingState") == "MN") { echo("selected"); } ?> value="MN">MN</option>
+													<option <?php if(getSessionVariable("shippingState") == "MO") { echo("selected"); } ?> value="MO">MO</option>
+													<option <?php if(getSessionVariable("shippingState") == "MS") { echo("selected"); } ?> value="MS">MS</option>
+													<option <?php if(getSessionVariable("shippingState") == "MT") { echo("selected"); } ?> value="MT">MT</option>
+													<option <?php if(getSessionVariable("shippingState") == "NC") { echo("selected"); } ?> value="NC">NC</option>
+													<option <?php if(getSessionVariable("shippingState") == "NE") { echo("selected"); } ?> value="NE">NE</option>
+													<option <?php if(getSessionVariable("shippingState") == "NH") { echo("selected"); } ?> value="NH">NH</option>
+													<option <?php if(getSessionVariable("shippingState") == "NJ") { echo("selected"); } ?> value="NJ">NJ</option>
+													<option <?php if(getSessionVariable("shippingState") == "NM") { echo("selected"); } ?> value="NM">NM</option>
+													<option <?php if(getSessionVariable("shippingState") == "NV") { echo("selected"); } ?> value="NV">NV</option>
+													<option <?php if(getSessionVariable("shippingState") == "NY") { echo("selected"); } ?> value="NY">NY</option>
+													<option <?php if(getSessionVariable("shippingState") == "ND") { echo("selected"); } ?> value="ND">ND</option>
+													<option <?php if(getSessionVariable("shippingState") == "OH") { echo("selected"); } ?> value="OH">OH</option>
+													<option <?php if(getSessionVariable("shippingState") == "OK") { echo("selected"); } ?> value="OK">OK</option>
+													<option <?php if(getSessionVariable("shippingState") == "OR") { echo("selected"); } ?> value="OR">OR</option>
+													<option <?php if(getSessionVariable("shippingState") == "PA") { echo("selected"); } ?> value="PA">PA</option>
+													<option <?php if(getSessionVariable("shippingState") == "RI") { echo("selected"); } ?> value="RI">RI</option>
+													<option <?php if(getSessionVariable("shippingState") == "SC") { echo("selected"); } ?> value="SC">SC</option>
+													<option <?php if(getSessionVariable("shippingState") == "SD") { echo("selected"); } ?> value="SD">SD</option>
+													<option <?php if(getSessionVariable("shippingState") == "TN") { echo("selected"); } ?> value="TN">TN</option>
+													<option <?php if(getSessionVariable("shippingState") == "TX") { echo("selected"); } ?> value="TX">TX</option>
+													<option <?php if(getSessionVariable("shippingState") == "UT") { echo("selected"); } ?> value="UT">UT</option>
+													<option <?php if(getSessionVariable("shippingState") == "VT") { echo("selected"); } ?> value="VT">VT</option>
+													<option <?php if(getSessionVariable("shippingState") == "VA") { echo("selected"); } ?> value="VA">VA</option>
+													<option <?php if(getSessionVariable("shippingState") == "WA") { echo("selected"); } ?> value="WA">WA</option>
+													<option <?php if(getSessionVariable("shippingState") == "WI") { echo("selected"); } ?> value="WI">WI</option>
+													<option <?php if(getSessionVariable("shippingState") == "WV") { echo("selected"); } ?> value="WV">WV</option>
+													<option <?php if(getSessionVariable("shippingState") == "WY") { echo("selected"); } ?> value="WY">WY</option>
 												</select>
 											</div>
 										</div>
 										<div class="col-md-4">
 											<div class="form-group">
 												<label for="shippingZip">Zip Code</label>
-												<input type="number" name="shippingZip" id="shippingZip" class="form-control">
+												<input type="number" name="shippingZip" id="shippingZip" class="form-control" value="<?php getSessionVariable("shippingZip"); ?>" >
 											</div>
 										</div>
 									</div>
@@ -375,24 +383,24 @@
 			</form>
 		</main>
 
-<!-- Place mouse in billingName box on page load -->
-<script>
-	document.getElementById("firstName").focus();
-</script>
-
-<footer>
-	<?php include("includes/footer.html"); ?>
-</footer>
+		<!-- Place mouse in billingName box on page load -->
+		<script>
+			document.getElementById("firstName").focus();
+		</script>
 
 
 
-<!-- Bootstrap JavaScript -->
-<?php include('includes/bootstrap_javascript.html') ?>
-
-<!-- JS Libraries -->
-<?php include('includes/jsLibs.html'); ?>
-
-</body>
+		<footer>
+			<?php include("includes/footer.html"); ?>
+		</footer>
 
 
+
+		<!-- Bootstrap JavaScript -->
+		<?php include('includes/bootstrap_javascript.html') ?>
+
+		<!-- JS Libraries -->
+		<?php include('includes/jsLibs.html'); ?>
+
+	</body>
 </html>
