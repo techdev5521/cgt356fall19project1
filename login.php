@@ -25,9 +25,9 @@
 	<main>
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-4 my-5">
-					<div class="card my-5 box-shadow px-3 py-4">
-						<form class="form-signin">
+				<div class="col-md-6 my-5">
+					<div class="card my-5 box-shadow px-3 py-4 bg-light">
+						<form class="form-signin mx-5 my-4">
 							<h2 class="text-center">Please Login</h2>
 							
 							<div class="form-group my-4">
@@ -38,7 +38,7 @@
 								<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
 							</div>
 
-							<button class="btn btn-lg btn-success btn-block" type="submit">Login</button>
+							<button class="btn btn-lg btn-secondary btn-block" type="submit">Login</button>
 						</form>
 					</div>
 				</div>
@@ -56,6 +56,9 @@
 
 	<!-- Bootstrap JavaScript -->
 	<?php include('includes/bootstrap_javascript.html') ?>
+
+	<!-- JS Libraries -->
+	<?php include('includes/jsLibs.html'); ?>
 
 	</body>
 </html>
