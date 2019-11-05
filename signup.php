@@ -28,8 +28,9 @@
 					<div class="col-md-12">
 						
 						<h1 class="text-center">Signup</h1>
+						<p class="text-center">Already have an account? <a href="login.php">Login</a></p>
 						
-						<div class="card my-5 py-3 px-3">
+						<div class="card my-5 py-3 px-3 box-shadow">
 
 							<h2 class="text-center mt-3">About You</h2>
 							<hr>
