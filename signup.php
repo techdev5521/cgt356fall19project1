@@ -378,20 +378,6 @@
 <!-- Place mouse in billingName box on page load -->
 <script>
 	document.getElementById("firstName").focus();
-
-	function checkPassword() {
-		let password1 = document.getElementById("password").value;
-		let password2 = document.getElementById("confirmPassword").value;
-
-		else if (password1 === password2) {
-			return true;
-		}
-		else{
-			alert ("Passwords do not match: Please try again...");
-			return false;
-		}
-	}
-
 </script>
 
 <footer>
