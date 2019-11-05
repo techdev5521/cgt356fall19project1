@@ -27,7 +27,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-6 my-5">
 					<div class="card my-5 box-shadow px-3 py-4 bg-light">
-						<form class="form-signin mx-5 my-4">
+						<form action="doLogin.php" method="POST" class="form-signin mx-5 my-4">
 							<h2 class="text-center">Please Login</h2>
 							
 							<div class="form-group my-4">
