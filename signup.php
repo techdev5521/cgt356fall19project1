@@ -109,14 +109,17 @@
 										<div class="card-header">
 											<h5>Add A Card</h5>
 										</div>
+
 										<div class="card-body">
 											<div class="row">
+
 												<div class="col-md-8">
 													<div class="form-group">
 														<label for="cardNumber">Card Number</label>
 														<input type="number" name="cardNumber" id="cardNumber" class="form-control" value="<?php getSessionVariable("cardNumber"); ?>" required>
 													</div>
 												</div>
+
 												<div class="col-md-4">
 													<div class="form-group">
 														<label for="cardType">Card Type</label>
@@ -130,6 +133,7 @@
 												</div>
 											</div>
 											<div class="row">
+
 												<div class="col-md-4">
 													<div class="form-group">
 														<label for="cardExpirationMonth">Month</label>
@@ -149,6 +153,7 @@
 														</select>
 													</div>
 												</div>
+
 												<div class="col-md-4">
 													<div class="form-group">
 														<label for="cardExpirationYear">Year</label>
@@ -163,6 +168,7 @@
 														</select>
 													</div>
 												</div>
+
 												<div class="col-md-4">
 													<div class="form-group">
 														<label for="cardCVV">CVV</label>
@@ -190,6 +196,7 @@
 											</div>
 										</div>
 									</div>
+
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group">
@@ -198,6 +205,7 @@
 											</div>
 										</div>
 									</div>
+
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
@@ -205,6 +213,7 @@
 												<input type="text" name="billingCity" id="billingCity" class="form-control" value="<?php getSessionVariable("billingCity"); ?>" required>
 											</div>
 										</div>
+
 										<div class="col-md-2">
 											<div class="form-group">
 												<label for="billingState">State</label>
@@ -263,6 +272,7 @@
 												</select>
 											</div>
 										</div>
+
 										<div class="col-md-4">
 											<div class="form-group">
 												<label for="billingZip">Zip Code</label>
@@ -279,6 +289,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="row">
+
 										<div class="col-md-6">
 											<div class="form-group">
 												<label for="shippingFirstName">First Name</label>
@@ -293,6 +304,7 @@
 											</div>
 										</div>
 									</div>
+
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group">
@@ -301,6 +313,7 @@
 											</div>
 										</div>
 									</div>
+
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
@@ -308,6 +321,7 @@
 												<input type="text" name="shippingCity" id="shippingCity" class="form-control" value="<?php getSessionVariable("shippingCity"); ?>" >
 											</div>
 										</div>
+
 										<div class="col-md-2">
 											<div class="form-group">
 												<label for="shippingState">State</label>
@@ -366,6 +380,7 @@
 												</select>
 											</div>
 										</div>
+
 										<div class="col-md-4">
 											<div class="form-group">
 												<label for="shippingZip">Zip Code</label>
@@ -375,7 +390,9 @@
 									</div>
 								</div>
 							</div>
+
 							<button class="btn btn-lg btn-secondary btn-block" type="submit">Signup</button>
+							
 						</div>
 					</div>
 				</div>
