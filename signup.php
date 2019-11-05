@@ -36,8 +36,11 @@
 						
 						<h1 class="text-center">Signup</h1>
 						<p class="text-center">Already have an account? <a href="login.php">Login</a></p>
+
+						<!-- Session Error Message -->
+						<?php printSessionErrorMessage(); ?>
 						
-						<div class="card my-5 py-3 px-3 box-shadow">
+						<div class="card my-3 py-3 px-3 box-shadow">
 
 							<h2 class="text-center mt-3">About You</h2>
 							<hr>
@@ -392,7 +395,7 @@
 							</div>
 
 							<button class="btn btn-lg btn-secondary btn-block" type="submit">Signup</button>
-							
+
 						</div>
 					</div>
 				</div>
