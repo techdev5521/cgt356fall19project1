@@ -41,6 +41,7 @@
 							<button class="btn btn-lg btn-secondary btn-block" type="submit">Login</button>
 						</form>
 					</div>
+					<p class="text-center">Don't have an account? <a href="signup.php">Signup</a></p>
 				</div>
 			</div>
 		</div>
