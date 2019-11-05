@@ -55,7 +55,7 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" class="form-control" required>
+										<input type="email" name="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 									</div>
 								</div>
 								
@@ -107,7 +107,7 @@
 												<div class="col-md-8">
 													<div class="form-group">
 														<label for="cardNumber">Card Number</label>
-														<input type="number" name="cardNumber" id="cardNumber" class="form-control" required>
+														<input type="number" name="cardNumber" id="cardNumber" class="form-control" pattern="{16}" required>
 													</div>
 												</div>
 												<div class="col-md-4">
@@ -379,18 +379,18 @@
 <script>
 	document.getElementById("firstName").focus();
 
-	function checkPassword() {
-		let password1 = document.getElementById("password").value;
-		let password2 = document.getElementById("confirmPassword").value;
+    var password = document.getElementById("password"), confirm_password = document.getElementById("passwordConfirm");
 
-		else if (password1 === password2) {
-			return true;
-		}
-		else{
-			alert ("Passwords do not match: Please try again...");
-			return false;
-		}
-	}
+    function validatePassword(){
+        if(password.value != confirm_password.value) {
+            confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+            confirm_password.setCustomValidity('');
+        }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
 
 </script>
 
