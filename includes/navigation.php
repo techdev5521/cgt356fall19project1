@@ -22,7 +22,7 @@
                             echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"signup.php\">Sign Up</a>");
                         }else { //If logged in
                             echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"accountInfo.php\">Account Info</a>");
-                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"index.php\">Log Out</a>}");
+                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"doLogout.php\">Log Out</a>}");
                         }
                         ?>
                     </div>
