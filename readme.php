@@ -44,10 +44,10 @@
 								<img class="card-img-top" src="images/trent.png" alt="Trent Lambrecht">
 								<div class="card-body">
 									<h5 class="card-title">"That red headed kid."</h5>
-									<p class="card-text">SHORT QUOTE</p>
+									<p class="card-text">"Failure is always an option"</p>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item"><strong>Major: </strong> Web Design</li>
+									<li class="list-group-item"><strong>Major: </strong> VPI and Web Design</li>
 								</ul>
 							</div>
 						</div>
