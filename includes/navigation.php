@@ -2,7 +2,7 @@
 
 <div class="navbar navbar-expand-lg navbar-dark bg-dark box-shadow">
     <nav class="container d-flex justify-content-between">
-        <img class="logo_img" src="images/logo.png" alt="GameGo Logo" data-toggle="tooltip" title="Home" href = "index.php">
+        <a href="index.php" ><img class="logo_img" src="images/logo.png" alt="GameGo Logo" data-toggle="tooltip" title="Home"></a>
         <a class="navbar-brand" href="index.php" data-toggle="tooltip" title="Home">GameGo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
