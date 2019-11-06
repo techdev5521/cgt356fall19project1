@@ -65,7 +65,7 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" class="form-control" value="<?php getSessionVariable("email"); ?>" required>
+										<input type="email" name="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  value="<?php getSessionVariable("email"); ?>" required>
 									</div>
 								</div>
 								
@@ -402,6 +402,24 @@
 			</form>
 		</main>
 
+<!-- verifies password -->
+<script>
+	document.getElementById("firstName").focus();
+
+    var password = document.getElementById("password"), confirm_password = document.getElementById("passwordConfirm");
+
+    function validatePassword(){
+        if(password.value != confirm_password.value) {
+            confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+            confirm_password.setCustomValidity('');
+        }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+
+</script>
 		<!-- Place mouse in billingName box on page load -->
 		<script>
 			document.getElementById("firstName").focus();
