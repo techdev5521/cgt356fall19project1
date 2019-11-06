@@ -1,5 +1,5 @@
 <?php
-	session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="em-US">
@@ -61,7 +61,7 @@
 								<p class="card-text">Behind every good programmer there is a frustrated programmer.</p>
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><strong>Major: </strong> Mechanical Engineering Technology & Virtual Product Integration</li>
+								<li class="list-group-item"><strong>Major: </strong> MET & VPI</li>
 							</ul>
 						</div>
 
