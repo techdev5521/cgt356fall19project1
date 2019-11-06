@@ -101,7 +101,7 @@
 	}
 
 	// Set Logged In Cariable
-	setSessionVariable("loggedIN", true);
+	setSessionVariable("loggedIn", true);
 
 	// Redirect to Account Information
 	header("Location:accountInfo.php");
