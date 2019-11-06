@@ -43,11 +43,11 @@ session_start();
 							</div>
 							<img class="card-img-top" src="images/trent.png" alt="Trent Lambrecht">
 							<div class="card-body">
-								<h5 class="card-title">That red headed kid</h5>
+								<h5 class="card-title">Waterboy</h5>
 								<p class="card-text">"Failure is always an option"</p>
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><strong>Major: </strong> VPI and Web Design</li>
+								<li class="list-group-item"><strong>Major: </strong> VPI & Web Design</li>
 							</ul>
 						</div>
 						
@@ -57,8 +57,8 @@ session_start();
 							</div>
 							<img class="card-img-top" src="images/kai.PNG" alt="Kai Mangiaracina">
 							<div class="card-body">
-								<h5 class="card-title">"MangoTree"</h5>
-								<p class="card-text">Behind every good programmer there is a frustrated programmer.</p>
+								<h5 class="card-title">MangoTree</h5>
+								<p class="card-text">"Behind every good programmer there is a frustrated programmer."</p>
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item"><strong>Major: </strong> MET & VPI</li>
@@ -72,10 +72,10 @@ session_start();
 							<img class="card-img-top" src="images/justin.png" alt="Justin Campbell">
 							<div class="card-body">
 								<h5 class="card-title">Mom</h5>
-								<p class="card-text">SHORT QUOTE</p>
+								<p class="card-text">"A man does not look behind the door unless he has stood there himself."</p>
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><strong>Major: </strong> Web Design</li>
+								<li class="list-group-item"><strong>Major: </strong> Web Design & Security</li>
 							</ul>
 						</div>
 
@@ -85,11 +85,11 @@ session_start();
 							</div>
 							<img class="card-img-top" src="images/brad.png" alt="Brad Williams">
 							<div class="card-body">
-								<h5 class="card-title">Doc</h5>
-								<p class="card-text">SHORT QUOTE</p>
+								<h5 class="card-title">Mr. Moostauche</h5>
+								<p class="card-text">"Do or do not, there is no try."</p>
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><strong>Major: </strong> Web Design</li>
+								<li class="list-group-item"><strong>Major: </strong> VPI & Web Design</li>
 							</ul>
 						</div>
 					</div>
