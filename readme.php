@@ -36,14 +36,14 @@
 			<div class="container pb-5" id="readme">
 				<div class="row justify-content-center">
 					
-						<div class="col-md-3">
+						<div class="col-xs-3">
 							<div class="card box-shadow mb-3">
 								<div class="card-header text-center">
 									<h5>Trent Lambrecht</h5>
 								</div>
 								<img class="card-img-top" src="images/trent.png" alt="Trent Lambrecht">
 								<div class="card-body">
-									<h5 class="card-title">"That red headed kid."</h5>
+									<h5 class="card-title">That red headed kid</h5>
 									<p class="card-text">"Failure is always an option"</p>
 								</div>
 								<ul class="list-group list-group-flush">
@@ -52,14 +52,14 @@
 							</div>
 						</div>
 						
-						<div class="col-md-3">
+						<div class="col-xs-3">
 							<div class="card box-shadow mb-3">
 								<div class="card-header text-center">
 									<h5>Kai Mangiaracina</h5>
 								</div>
-								<img class="card-img-top" src="http://lorempixel.com/648/480/nature/2" alt="Kai Mangiaracina">
+								<img class="card-img-top" src="images/kai.png" alt="Kai Mangiaracina">
 								<div class="card-body">
-									<h5 class="card-title">"Mango Tree"</h5>
+									<h5 class="card-title">Mango Tree</h5>
 									<p class="card-text">SHORT QUOTE</p>
 								</div>
 								<ul class="list-group list-group-flush">
@@ -68,14 +68,14 @@
 							</div>
 						</div>
 
-						<div class="col-md-3">
+						<div class="col-xs-3">
 							<div class="card box-shadow mb-3">
 								<div class="card-header text-center">
 									<h5>Justin Campbell</h5>
 								</div>
 								<img class="card-img-top" src="images/justin.png" alt="Justin Campbell">
 								<div class="card-body">
-									<h5 class="card-title">"Dad"</h5>
+									<h5 class="card-title">Mom</h5>
 									<p class="card-text">SHORT QUOTE</p>
 								</div>
 								<ul class="list-group list-group-flush">
@@ -84,14 +84,14 @@
 							</div>
 						</div>
 
-						<div class="col-md-3">
+						<div class="col-xs-3">
 							<div class="card box-shadow mb-3">
 								<div class="card-header text-center">
 									<h5>Brad Williams</h5>
 								</div>
-								<img class="card-img-top" src="http://lorempixel.com/648/480/nature/4" alt="Brad Williams">
+								<img class="card-img-top" src="images/brad.png" alt="Brad Williams">
 								<div class="card-body">
-									<h5 class="card-title">"Doc"</h5>
+									<h5 class="card-title">Doc</h5>
 									<p class="card-text">SHORT QUOTE</p>
 								</div>
 								<ul class="list-group list-group-flush">
