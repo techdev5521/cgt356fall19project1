@@ -11,9 +11,9 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <?php
-                    if (1) { //if logged out
+                    if (returnSessionVariable("loggedIn") == true) { //if logged in
                         echo("<button class=\"btn btn-light mr-2\" type=\"button\" onclick=\"window.location.href = 'accountInfo.php';\">Account Info</button>");
-                    }else { //If logged in
+                    }else { //If logged out
                         echo("<button class=\"btn btn-light ml-2\" type=\"button\" onclick=\"window.location.href = 'login.php';\">Account Info</button>}");
                     }
                     ?>
@@ -25,7 +25,7 @@
                 <li class="nav-item active">
                     <div class="form-inline my-2 my-lg-0">
                         <?php
-                        if (1) { //if logged out
+                        if (returnSessionVariable("loggedIn") == false) { //if logged out
                             echo("<button class=\"btn btn-light mr-2\" type=\"button\" onclick=\"window.location.href = 'login.php';\">Login</button>");
                             echo("<button class=\"btn btn-light ml-2\" type=\"button\" onclick=\"window.location.href = 'signup.php';\">Sign Up</button>");
                         }else { //If logged in
