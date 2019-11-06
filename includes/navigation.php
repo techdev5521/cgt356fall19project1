@@ -10,15 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <?php
-                    if (returnSessionVariable("loggedIn") == true) { //if logged in
-                        echo("<button class=\"btn btn-light mr-2\" type=\"button\" onclick=\"window.location.href = 'accountInfo.php';\">Account Info</button>");
-                    }else { //If logged out
-                        echo("<button class=\"btn btn-light ml-2\" type=\"button\" onclick=\"window.location.href = 'login.php';\">Account Info</button>}");
-                    }
-                    ?>
                     <button class="btn btn-light mr-2" type="button" onclick="window.location.href = 'readme.php';">Read Me</button>
-                    <!-- <a class="btn btn-light mr-2" type="button" href="readme.php">Read Me</a> -->
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -29,6 +21,7 @@
                             echo("<button class=\"btn btn-light mr-2\" type=\"button\" onclick=\"window.location.href = 'login.php';\">Login</button>");
                             echo("<button class=\"btn btn-light ml-2\" type=\"button\" onclick=\"window.location.href = 'signup.php';\">Sign Up</button>");
                         }else { //If logged in
+                            echo("<button class=\"btn btn-light mr-2\" type=\"button\" onclick=\"window.location.href = 'accountInfo.php';\">Account Info</button>");
                             echo("<button class=\"btn btn-light ml-2\" type=\"button\" onclick=\"window.location.href = 'index.php';\">Log out</button>}");
                         }
                         ?>
