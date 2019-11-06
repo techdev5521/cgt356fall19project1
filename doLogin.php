@@ -87,7 +87,7 @@
 		}
 	}
 
-	// Select all but username from Billing
+	// Select all but username from Shipping
 	$sql = "SELECT `shippingFirstName`, `shippingLastName`, `shippingStreet`, `shippingCity`, `shippingState`, `shippingZip` FROM `Shipping` ";
 	$sql = $sql . "WHERE username='" . returnSessionVariable("username") . "'";
 	$result = $conn->query($sql);
