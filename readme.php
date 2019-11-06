@@ -1,62 +1,121 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="em-US">
+	
+	<head>
+		<title>GameGo: Readme</title>
 
-<head>
-    <title>Project 1: Home</title>
+		<!-- Metadata-->
+		<?php include('includes/meta.html'); ?>
 
-    <!-- Metadata-->
-    <?php include('includes/meta.html'); ?>
+		<!-- CSS -->
+		<?php include('includes/css.html'); ?>
 
-    <!-- CSS -->
-    <?php include('includes/css.html'); ?>
+		<!-- PHP Libraries -->
+		<?php include('includes/phpLibs.html'); ?>
 
-    <!-- PHP Libraries -->
-    <?php include('includes/phpLibs.html'); ?>
+	</head>
 
-</head>
+	<body>
+		
+		<header>
+			<!-- Navigation -->
+			<?php include('includes/navigation.php'); ?>
+		</header>
 
-<body>
+		<main>
+			<section id="header" class="jumbotron text-center">
+				<div class="container">
+					<h1 class="jumbotron-heading">About The Site, Team, and Shared Dream</h1>
+					<p class="lead text-muted">Deux Ex is one of the best video game series of all time. Change my mind.</p>
+				</div>
+			</section>
 
-<header>
-    <!-- Navigation -->
-    <?php include('includes/navigation.php'); ?>
-</header>
+			<div class="container pb-5" id="readme">
+				<div class="row justify-content-center">
+					
+						<div class="col-md-3">
+							<div class="card box-shadow mb-3">
+								<div class="card-header text-center">
+									<h5>Trent Lambrecht</h5>
+								</div>
+								<img class="card-img-top" src="images/trent.png" alt="Trent Lambrecht">
+								<div class="card-body">
+									<h5 class="card-title">"That red headed kid."</h5>
+									<p class="card-text">SHORT QUOTE</p>
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item"><strong>Major: </strong> Web Design</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-3">
+							<div class="card box-shadow mb-3">
+								<div class="card-header text-center">
+									<h5>Kai Mangiaracina</h5>
+								</div>
+								<img class="card-img-top" src="http://lorempixel.com/648/480/nature/2" alt="Kai Mangiaracina">
+								<div class="card-body">
+									<h5 class="card-title">"Mango Tree"</h5>
+									<p class="card-text">SHORT QUOTE</p>
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item"><strong>Major: </strong> Web Design</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="card box-shadow mb-3">
+								<div class="card-header text-center">
+									<h5>Justin Campbell</h5>
+								</div>
+								<img class="card-img-top" src="images/justin.png" alt="Justin Campbell">
+								<div class="card-body">
+									<h5 class="card-title">"Dad"</h5>
+									<p class="card-text">SHORT QUOTE</p>
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item"><strong>Major: </strong> Web Design</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="card box-shadow mb-3">
+								<div class="card-header text-center">
+									<h5>Brad Williams</h5>
+								</div>
+								<img class="card-img-top" src="http://lorempixel.com/648/480/nature/4" alt="Brad Williams">
+								<div class="card-body">
+									<h5 class="card-title">"Doc"</h5>
+									<p class="card-text">SHORT QUOTE</p>
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item"><strong>Major: </strong> Web Design</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p>Extras (above and beyond) if any</p>
+				<p>Explanation of any 'quirks' in your system</p>
+			</main>
+
+			<footer>
+				<?php include("includes/footer.html"); ?>
+			</footer>
 
 
+			<!-- Bootstrap JavaScript -->
+			<?php include('includes/bootstrap_javascript.html') ?>
 
-<main>
-    <section id="header" class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Welcome to read me</h1>
-            <p class="lead text-muted">We hope you enjoyed our website</p>
-        </div>
-    </section>
+			<!-- JS Libraries -->
+			<?php include('includes/jsLibs.html'); ?>
 
-    <div class="container">
-        <h4 class="text-center">Website created by: Justin Campbell, Trent Lambrecht, Kai Mangiaracina, & Brad Williams</h4>
-            <p>This is our read me instructions</p>
-            <p>o	Extras (above and beyond) if any</p>
-            <p>o	Explanation of any 'quirks' in your system</p>
-
-
-    </div>
-</main>
-
-
-
-<footer>
-    <?php include("includes/footer.html"); ?>
-</footer>
-
-
-
-<!-- Bootstrap JavaScript -->
-<?php include('includes/bootstrap_javascript.html') ?>
-
-<!-- JS Libraries -->
-<?php include('includes/jsLibs.html'); ?>
-
-</body>
-
-
+	</body>
 </html>

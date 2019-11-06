@@ -70,6 +70,10 @@ a.logo_nav:hover {
 	.footer{position: relative;}
 }
 
+#readme .card-img-top{
+	height: 300px
+}
+
 html, body {
 	max-width: 100%;
 	overflow-x: hidden;
