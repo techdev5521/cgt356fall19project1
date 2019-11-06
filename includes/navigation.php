@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <button class="btn btn-light mr-2" type="button" onclick="window.location.href = 'readme.php';">Read Me</button>
+                    <a class="btn btn-light mr-2" type="button" href = "readme.php">Read Me</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -18,11 +18,11 @@
                     <div class="form-inline my-2 my-lg-0">
                         <?php
                         if (returnSessionVariable("loggedIn") == false) { //if logged out
-                            echo("<button class=\"btn btn-light mr-2\" type=\"button\" onclick=\"window.location.href = 'login.php';\">Login</button>");
-                            echo("<button class=\"btn btn-light ml-2\" type=\"button\" onclick=\"window.location.href = 'signup.php';\">Sign Up</button>");
+                            echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"login.php\">Login</a>");
+                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"signup.php\">Sign Up</a>");
                         }else { //If logged in
-                            echo("<button class=\"btn btn-light mr-2\" type=\"button\" onclick=\"window.location.href = 'accountInfo.php';\">Account Info</button>");
-                            echo("<button class=\"btn btn-light ml-2\" type=\"button\" onclick=\"window.location.href = 'index.php';\">Log out</button>}");
+                            echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"accountInfo.php\">Account Info</a>");
+                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"index.php\">Log out</a>}");
                         }
                         ?>
                     </div>
