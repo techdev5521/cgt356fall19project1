@@ -1,3 +1,8 @@
+<?php 
+	// Start Session
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="em-US">
 
@@ -33,6 +38,8 @@
 							echo("<div class=\"alert alert-success text-center\" role=\"alert\">Your account was created successfully. Please login.</div>");
 						}
 					} ?>
+					
+					<?php printSessionErrorMessage(); ?>
 
 					<div class="card my-5 box-shadow px-3 py-4 bg-light">
 						<form action="doLogin.php" method="POST" class="form-signin mx-5 my-4">
