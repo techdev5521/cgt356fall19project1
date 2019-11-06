@@ -55,7 +55,7 @@ session_start();
 							<div class="card-header text-center">
 								<h5>Kai Mangiaracina</h5>
 							</div>
-							<img class="card-img-top" src="images/kai.PNG" alt="Kai Mangiaracina">
+							<img class="card-img-top" src="images/kai.png" alt="Kai Mangiaracina">
 							<div class="card-body">
 								<h5 class="card-title">MangoTree</h5>
 								<p class="card-text">"Behind every good programmer there is a frustrated programmer."</p>
