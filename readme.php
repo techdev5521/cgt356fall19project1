@@ -43,7 +43,7 @@ session_start();
                     </div>
                     <img class="card-img-top" src="images/trent.png" alt="Trent Lambrecht">
                     <div class="card-body">
-                        <h5 class="card-title">That red headed kid</h5>
+                        <h5 class="card-title">Water Boy</h5>
                         <p class="card-text">"Failure is always an option"</p>
                     </div>
                     <ul class="list-group list-group-flush">
