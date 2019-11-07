@@ -49,6 +49,21 @@
 				<div class="card-header">
 					<h4 class="text-center">Account Info</h4>
 				</div>
+
+				<?php
+
+					// Open Database Connection
+					include("includes/openDBConn.php");
+
+					// Pull account information from database and set it to session variables
+					$sql = "SELECT `firstName`, `lastName`, `email`, `phone` FROM `Users` WHERE `username` = '" . returnSessionVariable("username") . "'";
+					$result = $conn->query($sql);
+
+					foreach ($result->fetch_assoc() as $key => $value) {
+						setSessionVariable($key, $value);
+					}
+
+				?>
 				
 				<div class="card-body">
 					<div class="row">
