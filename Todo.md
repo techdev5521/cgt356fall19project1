@@ -15,7 +15,7 @@
 - [x] Login/Signup Nav
 - [ ] Account Nav
 	- [ ] Make buttons stack in mobile (breakpoint display block width 100%)
-	- [ ] Fix icon link in nav
+	- [x] Fix icon link in nav
 - [x] Footer)
 - [x] Database Opener/Closer
 - [x] Session Handler

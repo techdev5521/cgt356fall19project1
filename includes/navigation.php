@@ -8,14 +8,14 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav float-left">
                 <li class="nav-item">
-                    <a class="btn btn-light mr-2" type="button" href = "readme.php" data-toggle="tooltip" title="All About ME!!!!">Read Me</a>
+                    <a class="btn btn-light mr-2 mt-2" type="button" href = "readme.php" data-toggle="tooltip" title="All About ME!!!!">Read Me</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <div class="form-inline my-2 my-lg-0">
+                    <div class="form-inline my-2 my-lg-0 float-right">
                         <?php
                         if (returnSessionVariable("loggedIn") == false) { //if logged out
                             echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"login.php\" data-toggle=\"tooltip\" title=\"Get Logged In!\">Login</a>");
