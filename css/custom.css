@@ -1,25 +1,30 @@
 /* custom.css */
 
+/* adds style to the logo image in the navigation bar */
 .logo_img{
 	max-width: 100px;
 	max-height: 80px;
 	display: inline;
 }
 
+/* adds style to the navigation bar */
 .logo_nav{
 	display: inline;
 	color: gold;
 }
 
+/* adds style to the navigation bar */
 a.logo_nav:hover {
 	text-decoration: none;
 	color: gold;
 }
 
+/* adds style to the navigation bar */
 .navbar-brand {
 	font-size: 1.25em;
 }
 
+/* adds style to the footer */
 .footer {
 	position: fixed;
 	left: 0;
@@ -29,41 +34,48 @@ a.logo_nav:hover {
 	text-align: center;
 }
 
+/* adds style to the footer */
 .footer a {
 	text-decoration: none;
 	color: gold;
 }
 
+/* adds style to the footer */
 .footer a:hover{
 	color: white;
 	font-weight: bold;
 }
 
-/* Adds a sublt box shadow to any block element */
+/* Adds a subtle box shadow to any block element */
 .box-shadow{
 	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)
 }
 
+/* Adds a minimum height to the game banner for each of the 3 images on the index */
 .game-banner{
 	min-height: 300px;
 }
 
+/* style for the modern warfare image on index */
 #modern-warfare{
 	background-image: url('../images/modern-warfare.jpeg');
 	border-radius: .25em;
 }
 
+/* style for the red dead image on index */
 #red-dead-redemption-2{
 	background-image: url('../images/red-dead-redemption.jpg');
 	background-size: cover;
 	border-radius: .25em;
 }
 
+/* style for the death stranding image on index */
 #death-stranding{
 	background-image: url('../images/death-stranding.jpg');
 	border-radius: .25em;
 }
 
+/* Adds the black gradient over the 3 game images */
 .game-text-overlay{
 	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.75) 55%, rgba(0,0,0,0) 100%);;
 	color: white;
@@ -72,9 +84,9 @@ a.logo_nav:hover {
 
 @media (max-width: 576px) {
 	.footer{position: relative;}
-
 }
 
+/* Adds height to the cards on the read me page */
 #readme .card-img-top{
 	height: 300px
 }

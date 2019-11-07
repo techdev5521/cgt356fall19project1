@@ -79,8 +79,8 @@
 	</main>
 
 
-
-	<footer>
+    <!-- adds footer to the bottom of the page -->
+    <footer>
 		<?php include("includes/footer.html"); ?>
 	</footer>
 
