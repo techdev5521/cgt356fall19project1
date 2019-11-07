@@ -73,7 +73,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="btn btn-info btn-block">Edit Account Info</button>
+					<button class="btn btn-info btn-block" data-toggle="modal" data-target="#accountModal">Edit Account Info</button>
 				</div>
 			</div>
 
@@ -98,7 +98,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="btn btn-info btn-block">Edit Login Info</button>
+					<button class="btn btn-info btn-block" data-toggle="modal" data-target="#loginModal">Edit Login Info</button>
 				</div>
 			</div>
 
@@ -149,7 +149,7 @@
 										echo("<i class=\"fas fa-cog\"></i>");
 										echo("</a>");
 										echo("<div class=\"dropdown-menu\">");
-										echo("<a class=\"dropdown-item\" href=\"#\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
+										echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#billingModal\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
 										echo("<a class=\"dropdown-item\" style=\"color: #dc3545\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\" style=\"color: #dc3545\"></i>Delete</a>");
 										echo("</div>");
 										echo("</div>");
@@ -210,7 +210,7 @@
 										echo("<i class=\"fas fa-cog\"></i>");
 										echo("</a>");
 										echo("<div class=\"dropdown-menu\">");
-										echo("<a class=\"dropdown-item\" href=\"#\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
+										echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#shippingModal\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
 										echo("<a class=\"dropdown-item\" style=\"color: #dc3545\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\" style=\"color: #dc3545\"></i>Delete</a>");
 										echo("</div>");
 										echo("</div>");
