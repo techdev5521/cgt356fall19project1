@@ -39,6 +39,7 @@ session_start();
 			<div class="container pb-5" id="readme">
 				<div class="row justify-content-center">
 
+                    <!-- Card for Trent -->
 					<div class="card-deck">
 						<div class="card box-shadow mb-3">
 							<div class="card-header text-center">
@@ -53,7 +54,8 @@ session_start();
 								<li class="list-group-item"><strong>Major: </strong> VPI & Web Design</li>
 							</ul>
 						</div>
-						
+
+                        <!-- Card for Kai -->
 						<div class="card box-shadow mb-3">
 							<div class="card-header text-center">
 								<h5>Kai Mangiaracina</h5>
@@ -68,6 +70,7 @@ session_start();
 							</ul>
 						</div>
 
+                        <!-- Card for Justin -->
 						<div class="card box-shadow mb-3">
 							<div class="card-header text-center">
 								<h5>Justin Campbell</h5>
@@ -82,6 +85,7 @@ session_start();
 							</ul>
 						</div>
 
+                        <!-- Card for Brad -->
 						<div class="card box-shadow mb-3">
 							<div class="card-header text-center">
 								<h5>Brad Williams</h5>
@@ -104,6 +108,7 @@ session_start();
 				<p>Explanation of any 'quirks' in your system</p>
 			</main>
 
+            <!-- adds footer to the bottom of the page -->
 			<footer>
 				<?php include("includes/footer.html"); ?>
 			</footer>
