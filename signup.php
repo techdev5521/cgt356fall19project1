@@ -7,6 +7,9 @@
 
 <!DOCTYPE html>
 <html lang="em-US">
+<link rel="icon"
+      type="image/png"
+      href="images/logo.png">
 	
 	<head>
 		<title>GameGo Signup</title>
@@ -125,7 +128,7 @@
 
 												<div class="col-md-4">
 													<div class="form-group">
-														<label for="cardType">Card Type</label>
+														<label for="cardType">Type</label>
 														<select name="cardType" id="cardType" class="form-control">
 															<option <?php if(returnSessionVariable("cardType") == "Visa") { echo("selected"); } ?> value="Visa">Visa</option>
 															<option <?php if(returnSessionVariable("cardType") == "Mastercard") { echo("selected"); } ?> value="Mastercard">Mastercard</option>
@@ -210,14 +213,14 @@
 									</div>
 
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<div class="form-group">
 												<label for="billingCity">City</label>
 												<input type="text" name="billingCity" id="billingCity" class="form-control" value="<?php getSessionVariable("billingCity"); ?>" required>
 											</div>
 										</div>
 
-										<div class="col-md-2">
+										<div class="col-md-4">
 											<div class="form-group">
 												<label for="billingState">State</label>
 												<select name="billingState" id="billingState" class="form-control" required>

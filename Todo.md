@@ -13,8 +13,8 @@
 ## Shared Resources
 - [x] Homepage Nav
 - [x] Login/Signup Nav
-- [ ] Account Nav
-	- [ ] Make buttons stack in mobile (breakpoint display block width 100%)
+- [x] Account Nav
+	- [x] Make buttons stack in mobile (breakpoint display block width 100%)
 	- [x] Fix icon link in nav
 - [x] Footer)
 - [x] Database Opener/Closer
@@ -27,15 +27,15 @@
 - [ ] Fontawesome integration
 
 ## Individual Pages
-- [ ] Index
-	- [ ] Add buttons to images for snazzyness
-- [ ] signup.php
-	- [ ] Shorten billing city field and make state selector bigger
+- [x] Index
+	- [x] Add buttons to images for snazzyness
+- [x] signup.php
+	- [x] Shorten billing city field and make state selector bigger
 - [x] doSignup
 - [x] Login page
     - [x] Fix the double box thing
 - [x] doLogin
 - [ ] Account info
-	- [ ] Fix nav bullshit
+	- [x] Fix nav bullshit
 	- [ ] create edit modals
 - [ ] doAccountInfoUpdate
