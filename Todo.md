@@ -39,3 +39,4 @@
 	- [x] Fix nav bullshit
 	- [ ] create edit modals
 - [ ] doAccountInfoUpdate
+   	make user for Perry
