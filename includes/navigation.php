@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav float-left">
                 <li class="nav-item">
-                    <a class="btn btn-light mr-2 mt-2" type="button" href = "readme.php" data-toggle="tooltip" title="All About ME!!!!">Read Me</a>
+                    <a class="btn btn-light mr-2 mt-2" type="button" href = "readme.php" data-toggle="tooltip" title="All About ME!!!!"><i class="fab fa-readme"></i> Read Me</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -18,11 +18,11 @@
                     <div class="form-inline my-2 my-lg-0 float-right">
                         <?php
                         if (returnSessionVariable("loggedIn") == false) { //if logged out
-                            echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"login.php\" data-toggle=\"tooltip\" title=\"Get Logged In!\">Login</a>");
-                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"signup.php\" data-toggle=\"tooltip\" title=\"Get Signed Up!\">Sign Up</a>");
+                            echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"login.php\" data-toggle=\"tooltip\" title=\"Get Logged In!\"><i class=\"fas fa-sign-in-alt\"></i> Login</a>");
+                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"signup.php\" data-toggle=\"tooltip\" title=\"Get Signed Up!\"><i class=\"fas fa-user-plus\"></i> Sign Up</a>");
                         }else { //If logged in
-                            echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"accountInfo.php\" data-toggle=\"tooltip\" title=\"Your Info!\">Account Info</a>");
-                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"doLogout.php\" data-toggle=\"tooltip\" title=\"Get Out of Here!\">Log Out</a>}");
+                            echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"accountInfo.php\" data-toggle=\"tooltip\" title=\"Your Info!\"><i class=\"fas fa-user-circle\"></i> Account Info</a>");
+                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"doLogout.php\" data-toggle=\"tooltip\" title=\"Get Out of Here!\"><i class=\"fas fa-sign-out-alt\"></i> Log Out</a>}");
                         }
                         ?>
                     </div>

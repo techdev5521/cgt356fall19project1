@@ -12,7 +12,7 @@
       href="images/logo.png">
 	
 	<head>
-		<title>GameGo Signup</title>
+		<title>GameGo Sign Up</title>
 
 		<!-- Metadata-->
 		<?php include('includes/meta.html'); ?>
@@ -37,7 +37,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						
-						<h1 class="text-center">Signup</h1>
+						<h1 class="text-center">Sign Up</h1>
 						<p class="text-center">Already have an account? <a href="login.php">Login</a></p>
 
 						<!-- Session Error Message -->
@@ -397,7 +397,7 @@
 								</div>
 							</div>
 
-							<button class="btn btn-lg btn-secondary btn-block" type="submit">Signup</button>
+							<button class="btn btn-lg btn-secondary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
 
 						</div>
 					</div>

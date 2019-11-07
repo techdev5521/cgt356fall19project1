@@ -69,10 +69,10 @@
 								<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
 							</div>
 
-							<button class="btn btn-lg btn-secondary btn-block" type="submit">Login</button>
+							<button class="btn btn-lg btn-secondary btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
 						</form>
 					</div>
-					<p class="text-center">Don't have an account? <a href="signup.php">Signup</a></p>
+					<p class="text-center">Don't have an account? <a href="signup.php">Sign Up</a></p>
 				</div>
 			</div>
 		</div>

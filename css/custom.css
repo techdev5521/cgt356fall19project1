@@ -50,20 +50,24 @@ a.logo_nav:hover {
 
 #modern-warfare{
 	background-image: url('../images/modern-warfare.jpeg');
+	border-radius: .25em;
 }
 
 #red-dead-redemption-2{
 	background-image: url('../images/red-dead-redemption.jpg');
 	background-size: cover;
+	border-radius: .25em;
 }
 
 #death-stranding{
 	background-image: url('../images/death-stranding.jpg');
+	border-radius: .25em;
 }
 
 .game-text-overlay{
 	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.75) 55%, rgba(0,0,0,0) 100%);;
 	color: white;
+	border-radius: .25em;
 }
 
 @media (max-width: 576px) {
