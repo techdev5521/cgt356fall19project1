@@ -5,6 +5,9 @@
 
 <!DOCTYPE html>
 <html lang="em-US">
+<link rel="icon"
+      type="image/png"
+      href="images/logo.png">
 
 	<head>
 		<title>Login</title>
