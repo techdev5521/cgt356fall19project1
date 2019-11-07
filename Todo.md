@@ -24,7 +24,7 @@
 	- [x] Release `$_SESSION` array
 	- [x] Destroy `$_SESSION` array
 - [x] Login/Logout Functions
-- [ ] Fontawesome integration
+- [x] Fontawesome integration
 
 ## Individual Pages
 - [x] Index
@@ -37,6 +37,6 @@
 - [x] doLogin
 - [ ] Account info
 	- [x] Fix nav bullshit
-	- [ ] create edit modals
+	- [x] create edit modals
 - [ ] doAccountInfoUpdate
-   	make user for Perry
+- [ ] Make user for Perry
