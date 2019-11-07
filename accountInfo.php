@@ -34,7 +34,16 @@
 
 		<main class="container">
 
-			<h2 class="text-center mt-5">Hi, <?php getSessionVariable("firstName") ?>!</h2>
+			<div class="row mt-5">
+				<div class="col-md-12 text-center">
+					<h2>Hi, <?php getSessionVariable("firstName") ?>!</h2>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-4">
+				<?php printSessionSuccessMessage(); ?>
+				<?php unset($_SESSION["successMessage"]); ?>
+			</div>
 
 			<div class="card my-5 box-shadow">
 				<div class="card-header">
@@ -233,6 +242,9 @@
 					</div>
 				</div>
 				
+				<!-- Include Account Modal -->
+				<?php include("accountModal.php"); ?>
+
 			</div>
 		</main>
 
