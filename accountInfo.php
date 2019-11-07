@@ -158,7 +158,7 @@
 									$sql = $sql . "WHERE username='" . returnSessionVariable("username") . "'";
 									$result = $conn->query($sql);
 
-									// Populate table rows
+									// Populate table rows and fill session variables
 									for($i = 0; $i < $result->num_rows; $i++){
 										$row = $result->fetch_assoc();
 										echo("<tr>");	
@@ -175,12 +175,26 @@
 										echo("<i class=\"fas fa-cog\"></i>");
 										echo("</a>");
 										echo("<div class=\"dropdown-menu\">");
-										echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#billingModal\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
+										echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#billingModal{$i}\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
 										echo("<a class=\"dropdown-item\" style=\"color: #dc3545\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\" style=\"color: #dc3545\"></i>Delete</a>");
 										echo("</div>");
 										echo("</div>");
 										echo("</td>");
 										echo("</tr>");
+
+										$_SESSION['billing'][$i]['cardNumber'] = $row['cardNumber'];
+										$_SESSION['billing'][$i]['cardType'] = $row['cardType'];
+										$_SESSION['billing'][$i]['cardExpirationMonth'] = $row['cardExpirationMonth'];
+										$_SESSION['billing'][$i]['cardExpirationYear'] = $row['cardExpirationYear'];
+										$_SESSION['billing'][$i]['cardCVV'] = $row['cardCVV'];
+										$_SESSION['billing'][$i]['billingFirstName'] = $row['billingFirstName'];
+										$_SESSION['billing'][$i]['billingLastName'] = $row['billingLastName'];
+										$_SESSION['billing'][$i]['billingStreet'] = $row['billingStreet'];
+										$_SESSION['billing'][$i]['billingCity'] = $row['billingCity'];
+										$_SESSION['billing'][$i]['billingState'] = $row['billingState'];
+										$_SESSION['billing'][$i]['billingZip'] = $row['billingZip'];
+
+										include("billingModal.php");
 									}
 
 									// Close Database Connection
@@ -264,6 +278,9 @@
 
 				<!-- Include Login Modal -->
 				<?php include("loginModal.php"); ?>
+
+				<!-- Include Billing Modal -->
+				<?php include("billingModal.php"); ?>
 
 			</div>
 		</main>
