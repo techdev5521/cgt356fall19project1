@@ -38,6 +38,16 @@
 		}
 	}
 
+	/** Prints $_SESSION["successMessage"] inside success if not empty.
+	 */
+	function printSessionSuccessMessage(){
+		if (!empty($_SESSION["successMessage"])) {
+			echo("<div class=\"alert alert-success alert-dismissible fade show text-center\" role=\"alert\">" 
+				. $_SESSION["successMessage"] 
+				. "<button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</span></button></div>");
+		}
+	}
+
 	/** Print's array in human readable format
 	 *
 	 * @param Array $array The array to print
