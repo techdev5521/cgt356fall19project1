@@ -39,7 +39,7 @@
 	- [x] Fix nav bullshit
 	- [x] create edit modals
 	- [ ] integrate modals
-	- [ ] corrent inline styles for i and td w/ delete
+	- [ ] correct inline styles for i and td w/ delete
 	- [ ] validate password in modal
 	- [ ] add forms to modals
 - [ ] doAccountInfoUpdate

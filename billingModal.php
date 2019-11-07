@@ -2,7 +2,7 @@
 
 <!-- Edit Billing Record Modal -->
 <div class="modal fade" id="billingModal" tabindex="-1" role="dialog" aria-labelledby="billingModal" aria-hidden="true">
-    <form action="#" method="post">
+    <form action="doBillingUpdate.php" method="post">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">

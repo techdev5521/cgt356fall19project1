@@ -2,7 +2,7 @@
 
 <!-- Edit Shipping Record Modal -->
 <div class="modal fade" id="shippingModal" tabindex="-1" role="dialog" aria-labelledby="shippingModal" aria-hidden="true">
-    <form action="#" method="post">
+    <form action="doShippingUpdate.php" method="post">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">

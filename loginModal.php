@@ -2,7 +2,7 @@
 
 <!-- Edit Login Info Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
-    <form action="#" method="post">
+    <form action="doLoginUpdate.php" method="post">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
