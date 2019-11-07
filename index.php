@@ -41,6 +41,7 @@
 
             <div class="container">
 
+                <!--Modern Warfare game banner-->
                 <div class="row my-5 game-banner box-shadow" id="modern-warfare">
                     <div class="col-md-4 py-5 game-text-overlay">
                         <h2>Call of Duty <br>Modern Warfare</h2>
@@ -50,6 +51,7 @@
                     </div>
                 </div>
 
+                <!--Red Dead 2 game banner-->
                 <div class="row my-5 game-banner box-shadow" id="red-dead-redemption-2">
                     <div class="col-md-4 py-5 game-text-overlay">
                         <h2>Red Dead <br>Redemption 2</h2>
@@ -59,6 +61,7 @@
                     </div>
 				</div>
 
+                <!--Death Stranding game banner-->
 				<div class="row my-5 game-banner box-shadow" id="death-stranding">
 					<div class="col-md-4 py-5 game-text-overlay">
 						<h2>Death Stranding</h2>
