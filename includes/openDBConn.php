@@ -1,8 +1,8 @@
 <?php
 
 $db_host = "localhost";
-$db_user = "root";
-$db_pass = "TechDev#5521";
+$db_user = "project1data";
+$db_pass = "VyGVFnf$7bY5XTj";
 $db_name = "gamego";
 
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
