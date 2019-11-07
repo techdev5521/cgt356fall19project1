@@ -73,6 +73,9 @@
 		}
 	}
 
+	// CLose Database Connection
+	include("includes/closeDBConn.php");
+
 	// Set Logged In Cariable
 	setSessionVariable("loggedIn", true);
 
