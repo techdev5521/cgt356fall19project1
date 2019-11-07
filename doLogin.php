@@ -73,33 +73,6 @@
 		}
 	}
 
-	// Select all but username from Billing
-	$sql = "SELECT `cardNumber`, `cardType`, `cardExpirationMonth`, `cardExpirationYear`, `cardCVV`, ";
-	$sql = $sql . "`billingFirstName`, `billingLastName`, `billingStreet`, `billingCity`, `billingState`, `billingZip` FROM `Billing` ";
-	$sql = $sql . "WHERE username='" . returnSessionVariable("username") . "'";
-	$result = $conn->query($sql);
-
-	// Move data into session variables
-	for($i = 0; $i < $result->num_rows; $i++){
-		$row = $result->fetch_assoc();
-		foreach ($row as $key => $value) {
-			$_SESSION['billing'][$i][$key] = $value;
-		}
-	}
-
-	// Select all but username from Shipping
-	$sql = "SELECT `shippingFirstName`, `shippingLastName`, `shippingStreet`, `shippingCity`, `shippingState`, `shippingZip` FROM `Shipping` ";
-	$sql = $sql . "WHERE username='" . returnSessionVariable("username") . "'";
-	$result = $conn->query($sql);
-
-	// Move data into session variables
-	for($i = 0; $i < $result->num_rows; $i++){
-		$row = $result->fetch_assoc();
-		foreach ($row as $key => $value) {
-			$_SESSION['shipping'][$i][$key] = $value;
-		}
-	}
-
 	// Set Logged In Cariable
 	setSessionVariable("loggedIn", true);
 
