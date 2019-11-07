@@ -24,7 +24,7 @@
 	- [x] Release `$_SESSION` array
 	- [x] Destroy `$_SESSION` array
 - [x] Login/Logout Functions
-- [ ] Fontawesome integration
+- [x] Fontawesome integration
 
 ## Individual Pages
 - [x] Index
