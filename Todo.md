@@ -11,11 +11,11 @@
 - [x] Configure SFTP
 
 ## Shared Resources
-- [x] Homepage Nav
 - [x] Login/Signup Nav
-- [x] Account Nav
+- [ ] Nav
 	- [x] Make buttons stack in mobile (breakpoint display block width 100%)
 	- [x] Fix icon link in nav
+	- [ ] Fix the damn buttons, Kai <3
 - [x] Footer)
 - [x] Database Opener/Closer
 - [x] Session Handler
@@ -38,5 +38,9 @@
 - [ ] Account info
 	- [x] Fix nav bullshit
 	- [x] create edit modals
+	- [ ] integrate modals
+	- [ ] corrent inline styles for i and td w/ delete
+	- [ ] validate password in modal
+	- [ ] add forms to modals
 - [ ] doAccountInfoUpdate
 - [ ] Make user for Perry
