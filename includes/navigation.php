@@ -21,8 +21,8 @@
                             echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"login.php\" data-toggle=\"tooltip\" title=\"Get Logged In!\">Login</a>");
                             echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"signup.php\" data-toggle=\"tooltip\" title=\"Get Signed Up!\">Sign Up</a>");
                         }else { //If logged in
-                            echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"accountInfo.php\" data-toggle=\"tooltip\" title=\"Your Info!\>Account Info</a>");
-                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"doLogout.php\" data-toggle=\"tooltip\" title=\"Get Out of Here!\>Log Out</a>}");
+                            echo("<a class=\"btn btn-light mr-2\" type=\"button\" href = \"accountInfo.php\" data-toggle=\"tooltip\" title=\"Your Info!\">Account Info</a>");
+                            echo("<a class=\"btn btn-light ml-2\" type=\"button\" href = \"doLogout.php\" data-toggle=\"tooltip\" title=\"Get Out of Here!\">Log Out</a>}");
                         }
                         ?>
                     </div>
