@@ -24,6 +24,7 @@
 	- [x] Release `$_SESSION` array
 	- [x] Destroy `$_SESSION` array
 - [x] Login/Logout Functions
+- [ ] Fontawesome integration
 
 ## Individual Pages
 - [ ] Index
@@ -38,4 +39,3 @@
 	- [ ] Fix nav bullshit
 	- [ ] create edit modals
 - [ ] doAccountInfoUpdate
-- 
