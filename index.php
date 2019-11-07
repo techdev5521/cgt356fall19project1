@@ -47,7 +47,7 @@ session_start();
                 <a href="https://www.gamestop.com/video-games/pc/games/products/call-of-duty-modern-warfare/11097309.html" target="_blank" class="btn btn-light btn-block" role="button">&nbsp<i class="fas fa-info-circle"></i> More Info </a>
             </div>
         </div>
-
+        
         <div class="row my-5 game-banner box-shadow" id="red-dead-redemption-2">
             <div class="col-md-4 py-5 game-text-overlay">
                 <h2>Red Dead <br>Redemption 2</h2>

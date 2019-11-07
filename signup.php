@@ -38,11 +38,14 @@ session_start();
             <div class="col-md-12">
 
                 <h1 class="text-center">Sign Up</h1>
+
+                <!--Link that allows users to switch to the login page-->
                 <p class="text-center">Already have an account? <a href="login.php">Login</a></p>
 
                 <!-- Session Error Message -->
                 <?php printSessionErrorMessage(); ?>
 
+                <!--Table containing personal information (first name, last name, email, & phone)-->
                 <div class="card my-3 py-3 px-3 box-shadow">
 
                     <h2 class="text-center mt-3">About You</h2>
@@ -83,6 +86,7 @@ session_start();
                     <h2 class="text-center mt-3">Login Info</h2>
                     <hr>
 
+                    <!--Table containing login information (username, password, & confirm password)-->
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
@@ -109,6 +113,7 @@ session_start();
                     <h2 class="text-center mt-3">Billing Info</h2>
                     <hr>
 
+                    <!--Table containing credit card information (card number, type, expiration, & cvv)-->
                     <div class="row">
                         <div class="col-md-6">
                             <div class="card">
@@ -140,6 +145,7 @@ session_start();
                                     </div>
                                     <div class="row">
 
+                                        <!--List of expiration months-->
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="cardExpirationMonth">Month</label>
@@ -160,6 +166,7 @@ session_start();
                                             </div>
                                         </div>
 
+                                        <!--List of expiration years-->
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="cardExpirationYear">Year</label>
@@ -186,6 +193,7 @@ session_start();
                             </div>
                         </div>
 
+                        <!--Table containing billing address information (first name, last name, street, city, state, & zip)-->
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-6">
@@ -220,6 +228,7 @@ session_start();
                                     </div>
                                 </div>
 
+                                <!--List of possible states-->
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="billingState">State</label>
@@ -292,6 +301,7 @@ session_start();
                     <h2 class="text-center mt-3">Shipping Info <span class="text-muted">(if different from billing)</span></h2>
                     <hr>
 
+                    <!--Table containing shipping information (first name, last name, street, city, state, & zip)-->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="row">
@@ -328,6 +338,7 @@ session_start();
                                     </div>
                                 </div>
 
+                                <!--List of possible states-->
                                 <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="shippingState">State</label>
@@ -405,6 +416,7 @@ session_start();
     </form>
 </main>
 
+
 <!-- verifies password -->
 <script>
     document.getElementById("firstName").focus();
@@ -423,6 +435,8 @@ session_start();
     confirm_password.onkeyup = validatePassword;
 
 </script>
+
+
 <!-- Place mouse in billingName box on page load -->
 <script>
     document.getElementById("firstName").focus();

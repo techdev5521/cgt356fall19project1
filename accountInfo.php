@@ -34,6 +34,17 @@
 
 		<main class="container">
 
+			<div class="dropdown show">
+				<a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-cog"></i>
+ 				</a>
+
+ 				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="#"><i class="fas fa-pencil-alt"></i>Edit</a>
+					<a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i>Delete</a>
+				</div>
+			</div>
+
 			<h2 class="text-center mt-5">Hi, <?php getSessionVariable("firstName") ?>!</h2>
 
 			<div class="card my-5 box-shadow">
@@ -73,32 +84,32 @@
 							</div>
 						</div>
 					</div>
+					<button class="btn btn-info btn-block">Edit Account Info</button>
+				</div>
+			</div>
 
-					<h4 class="text-center mt-3">Login Info</h4>
-					<hr>							
-
+			<div class="card my-5 box-shadow">
+				<div class="card-header">
+					<h4 class="text-center">Login Info</h4>
+				</div>
+				
+				<div class="card-body">
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-6">
 							<div class="form-group">
 								<label for="username">Username</label>
 								<input type="text" name="username" id="username" class="form-control" value="<?php getSessionVariable("username") ?>" required disabled>
 							</div>
 						</div>
 
-						<div class="col-md-4">
+						<div class="col-md-6">
 							<div class="form-group">
 								<label for="password">Password</label>
-								<input type="password" name="password" id="password" class="form-control" required disabled>
-							</div>
-						</div>
-						
-						<div class="col-md-4">
-							<div class="form-group">
-								<label for="passwordConfirm">Password (Confirm)</label>
-								<input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control" required  disabled>
+								<input type="password" name="password" id="password" class="form-control" value="Roll Tide" required disabled>
 							</div>
 						</div>
 					</div>
+					<button class="btn btn-info btn-block">Edit Login Info</button>
 				</div>
 			</div>
 
