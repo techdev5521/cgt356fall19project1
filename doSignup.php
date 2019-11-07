@@ -105,11 +105,7 @@
 	$username = returnSessionVariable("username");
 
 	// Destroy Session
-	foreach ($_SESSION as $key => $value) {
-		$_SESSION[$key] = "";
-	}
-	session_unset();
-	session_destroy();
+	destroySession();
 
 	// Redirect to Login page
 	header("Location:login.php?signupSuccessful=true&username=" . $username);

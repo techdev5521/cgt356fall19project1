@@ -38,6 +38,13 @@
 							echo("<div class=\"alert alert-success text-center\" role=\"alert\">Your account was created successfully. Please login.</div>");
 						}
 					} ?>
+
+					<!-- Display success message if logout successful. -->
+					<?php if (!empty($_GET['logoutSuccessful'])) {
+						if ($_GET['logoutSuccessful']) {
+							echo("<div class=\"alert alert-success text-center\" role=\"alert\">You logged out successfully.</div>");
+						}
+					} ?>
 					
 					<?php printSessionErrorMessage(); ?>
 

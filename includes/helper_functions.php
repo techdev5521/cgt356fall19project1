@@ -48,4 +48,14 @@
 		}
 	}
 
+	/** Unsets session variables and destroys session
+	 */
+	function destroySession(){
+		foreach ($_SESSION as $key => $value) {
+			$_SESSION[$key] = "";
+		}
+		session_unset();
+		session_destroy();
+	}
+
 ?>
