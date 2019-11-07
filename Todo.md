@@ -40,7 +40,9 @@
 	- [x] create edit modals
 	- [ ] integrate modals
 	- [ ] correct inline styles for i and td w/ delete
-	- [ ] validate password in modal
-	- [ ] add forms to modals
+	- [x] validate password in modal
+	- [x] add forms to modals
+	- [ ] add icons to buttons in modals
+	- [ ] use javascript to put cursor in first usable text box on each modal
 - [ ] doAccountInfoUpdate
 - [ ] Make user for Perry

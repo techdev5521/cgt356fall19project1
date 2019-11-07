@@ -43,6 +43,8 @@
 			<div class="row justify-content-center mt-4">
 				<?php printSessionSuccessMessage(); ?>
 				<?php unset($_SESSION["successMessage"]); ?>
+				<?php printSessionErrorMessage(); ?>
+				<?php unset($_SESSION["errorMessage"]); ?>
 			</div>
 
 			<div class="card my-5 box-shadow">
@@ -259,6 +261,9 @@
 				
 				<!-- Include Account Modal -->
 				<?php include("accountModal.php"); ?>
+
+				<!-- Include Login Modal -->
+				<?php include("loginModal.php"); ?>
 
 			</div>
 		</main>

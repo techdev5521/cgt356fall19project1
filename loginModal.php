@@ -13,24 +13,33 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="username">Username</label>
                                 <input type="text" name="username" id="username" class="form-control" value="<?php getSessionVariable("username") ?>" required disabled>
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" name="password" id="password" class="form-control" required>
+                                <label for="currentPassword">Current Password</label>
+                                <input type="password" name="currentPassword" id="currentPassword" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="newPassword">New Password</label>
+                                <input type="password" name="newPassword" id="newPassword" class="form-control" required>
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label for="passwordConfirm">Password (Confirm)</label>
-                                <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control" required>
+                                <label for="newPasswordConfirm">New Password (Confirm)</label>
+                                <input type="password" name="newPasswordConfirm" id="newPasswordConfirm" class="form-control" required>
                             </div>
                         </div>
                     </div>
@@ -49,7 +58,7 @@
 <script>
     document.getElementById("firstName").focus();
 
-    var password = document.getElementById("password"), confirm_password = document.getElementById("passwordConfirm");
+    var password = document.getElementById("newPassword"), confirm_password = document.getElementById("newPasswordConfirm");
 
     function validatePassword(){
         if(password.value != confirm_password.value) {
