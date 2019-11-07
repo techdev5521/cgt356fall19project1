@@ -34,17 +34,6 @@
 
 		<main class="container">
 
-			<div class="dropdown show">
-				<a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<i class="fas fa-cog"></i>
- 				</a>
-
- 				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<a class="dropdown-item" href="#"><i class="fas fa-pencil-alt"></i>Edit</a>
-					<a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i>Delete</a>
-				</div>
-			</div>
-
 			<h2 class="text-center mt-5">Hi, <?php getSessionVariable("firstName") ?>!</h2>
 
 			<div class="card my-5 box-shadow">
@@ -129,6 +118,7 @@
 									<th>Expiration</th>
 									<th>Name</th>
 									<th>Address</th>
+									<th>Actions</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -146,11 +136,24 @@
 									for($i = 0; $i < $result->num_rows; $i++){
 										$row = $result->fetch_assoc();
 										echo("<tr>");	
-										echo("<td>" . substr($row['cardNumber'], 12) . "</td>"); // Card
-										echo("<td>" . $row['cardType'] . "</td>");	// Card Type
-										echo("<td>" . $row['cardExpirationMonth'] . "/" . $row['cardExpirationYear'] . "</td>"); // Card Expiration
-										echo("<td>" . $row['billingFirstName'] . " " . $row['billingLastName'] . "</td>"); // Name
-										echo("<td>" . $row['billingStreet'] . ", " .  $row['billingCity'] . ", " . $row['billingState'] . " " . $row['billingZip'] . "</td>");	// Address
+										echo("<td class=\"align-middle\">" . substr($row['cardNumber'], 12) . "</td>"); // Card
+										echo("<td class=\"align-middle\">" . $row['cardType'] . "</td>");	// Card Type
+										echo("<td class=\"align-middle\">" . $row['cardExpirationMonth'] . "/" . $row['cardExpirationYear'] . "</td>"); // Card Expiration
+										echo("<td class=\"align-middle\">" . $row['billingFirstName'] . " " . $row['billingLastName'] . "</td>"); // Name
+										echo("<td class=\"align-middle\">" . $row['billingStreet'] . ", " .  $row['billingCity'] . ", " . $row['billingState'] . " " . $row['billingZip'] . "</td>");	// Address
+
+										// Add Action Menu
+										echo("<td>");
+										echo("<div class=\"dropdown show\">");
+										echo("<a class=\"btn btn-info dropdown-toggle\" href=\"#\" role=\"button\" id=\"dropdownMenuLink\" data-toggle=\"dropdown\">");
+										echo("<i class=\"fas fa-cog\"></i>");
+										echo("</a>");
+										echo("<div class=\"dropdown-menu\">");
+										echo("<a class=\"dropdown-item\" href=\"#\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
+										echo("<a class=\"dropdown-item\" style=\"color: #dc3545\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\" style=\"color: #dc3545\"></i>Delete</a>");
+										echo("</div>");
+										echo("</div>");
+										echo("</td>");
 										echo("</tr>");
 									}
 
@@ -180,6 +183,7 @@
 								<tr>
 									<th>Name</th>
 									<th>Address</th>
+									<th>Actions</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -196,8 +200,23 @@
 									for($i = 0; $i < $result->num_rows; $i++){
 										$row = $result->fetch_assoc();
 										echo("<tr>");	
-										echo("<td>" . $row['shippingFirstName'] . " " . $row['shippingLastName'] . "</td>"); // Name
-										echo("<td>" . $row['shippingStreet'] . ", " .  $row['shippingCity'] . ", " . $row['shippingState'] . " " . $row['shippingZip'] . "</td>");	// Address
+										echo("<td class=\"align-middle\">" . $row['shippingFirstName'] . " " . $row['shippingLastName'] . "</td>"); // Name
+										echo("<td class=\"align-middle\">" . $row['shippingStreet'] . ", " .  $row['shippingCity'] . ", " . $row['shippingState'] . " " . $row['shippingZip'] . "</td>");	// Address
+
+										// Add Action Menu
+										echo("<td class=\"align-middle\">");
+										echo("<div class=\"dropdown show\">");
+										echo("<a class=\"btn btn-info dropdown-toggle\" href=\"#\" role=\"button\" id=\"dropdownMenuLink\" data-toggle=\"dropdown\">");
+										echo("<i class=\"fas fa-cog\"></i>");
+										echo("</a>");
+										echo("<div class=\"dropdown-menu\">");
+										echo("<a class=\"dropdown-item\" href=\"#\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
+										echo("<a class=\"dropdown-item\" style=\"color: #dc3545\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\" style=\"color: #dc3545\"></i>Delete</a>");
+										echo("</div>");
+										echo("</div>");
+										echo("</td>");
+										echo("</tr>");
+
 										echo("</tr>");
 									}
 
@@ -226,6 +245,9 @@
 
 		<!-- Bootstrap JavaScript -->
 		<?php include('includes/bootstrap_javascript.html') ?>
+
+		<!-- JS Libraries -->
+		<?php include('includes/jsLibs.html'); ?>
 
 	</body>
 </html>
