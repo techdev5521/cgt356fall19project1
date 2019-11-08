@@ -24,7 +24,6 @@
 	$sql = $sql . ", `email` = '{$_POST['email']}'";
 	$sql = $sql . ", `phone` = '{$_POST['phone']}' ";
 	$sql = $sql . "WHERE `Users`.`username` = '" . returnSessionVariable("username") . "';";
-	echo $sql;
 	$result = $conn->query($sql);
 
 	// CLose Database Connection
