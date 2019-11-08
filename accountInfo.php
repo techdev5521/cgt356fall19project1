@@ -185,6 +185,7 @@
 										$_SESSION['billing'][$i]['billingZip'] = $row['billingZip'];
 
 										include("billingEditModal.php");
+										include("billingDeleteModal.php");
 									}
 
 									// Close Database Connection
@@ -245,6 +246,7 @@
 										$_SESSION['shipping'][$i]['shippingZip'] = $row['shippingZip'];
 
 										include("shippingEditModal.php");
+										include("shippingDeleteModal.php");
 									}
 
 									// Close Database Connection
