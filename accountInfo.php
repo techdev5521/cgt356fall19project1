@@ -223,7 +223,7 @@
 									include("includes/openDBConn.php");
 
 									// Select all but username from Shipping
-									$sql = "SELECT `shippingFirstName`, `shippingLastName`, `shippingStreet`, `shippingCity`, `shippingState`, `shippingZip` FROM `Shipping` ";
+									$sql = "SELECT `ID`, `shippingFirstName`, `shippingLastName`, `shippingStreet`, `shippingCity`, `shippingState`, `shippingZip` FROM `Shipping` ";
 									$sql = $sql . "WHERE username='" . returnSessionVariable("username") . "'";
 									$result = $conn->query($sql);
 
@@ -235,15 +235,15 @@
 										echo("<td>" . $row['shippingStreet'] . ", " .  $row['shippingCity'] . ", " . $row['shippingState'] . " " . $row['shippingZip'] . "</td>");	// Address
 
 										// Add Action Menu
-										printActionMenu("shipping", $i);
+										printActionMenu("shipping", $row['ID']);
 										echo("</tr>");
 
-										$_SESSION['shipping'][$i]['shippingFirstName'] = $row['shippingFirstName'];
-										$_SESSION['shipping'][$i]['shippingLastName'] = $row['shippingLastName'];
-										$_SESSION['shipping'][$i]['shippingStreet'] = $row['shippingStreet'];
-										$_SESSION['shipping'][$i]['shippingCity'] = $row['shippingCity'];
-										$_SESSION['shipping'][$i]['shippingState'] = $row['shippingState'];
-										$_SESSION['shipping'][$i]['shippingZip'] = $row['shippingZip'];
+										$_SESSION['shipping'][$row['ID']]['shippingFirstName'] = $row['shippingFirstName'];
+										$_SESSION['shipping'][$row['ID']]['shippingLastName'] = $row['shippingLastName'];
+										$_SESSION['shipping'][$row['ID']]['shippingStreet'] = $row['shippingStreet'];
+										$_SESSION['shipping'][$row['ID']]['shippingCity'] = $row['shippingCity'];
+										$_SESSION['shipping'][$row['ID']]['shippingState'] = $row['shippingState'];
+										$_SESSION['shipping'][$row['ID']]['shippingZip'] = $row['shippingZip'];
 
 										include("shippingEditModal.php");
 										include("shippingDeleteModal.php");

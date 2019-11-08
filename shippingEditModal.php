@@ -16,6 +16,8 @@
                         <div class="col-md-12">
                             <div class="row">
 
+                                <input type="hidden" name="ID" id="ID" class="form-control" value="<?php echo $row['ID']; ?>" >
+
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="shippingFirstName">First Name</label>
