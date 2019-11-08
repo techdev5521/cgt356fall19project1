@@ -83,17 +83,24 @@
 
 	// Create shipping entry if present
 	if ($shippingInfoPresent) {
-		$sql = "INSERT INTO `Shipping` (`ID`, `username`, `shippingFirstName`, `shippingLastName`, `shippingStreet`, `shippingCity`, `shippingState`, `shippingZip`) ";
-		$sql = $sql . "VALUES ('";
-		$sql = $sql . returnSessionVariable("ID");
-		$sql = $sql . "', '" . returnSessionVariable("username");
-		$sql = $sql . "', '" . returnSessionVariable("shippingFirstName");
-		$sql = $sql . "', '" . returnSessionVariable("shippingLastName");
-		$sql = $sql . "', '" . returnSessionVariable("shippingStreet");
-		$sql = $sql . "', '" . returnSessionVariable("shippingCity");
-		$sql = $sql . "', '" . returnSessionVariable("shippingState");
-		$sql = $sql . "', '" . returnSessionVariable("shippingZip");
-		$sql = $sql . "')";
+		$sql = "INSERT INTO `Shipping` ";
+		$sql = $sql . "(`ID`";
+		$sql = $sql . ", `username`";
+		$sql = $sql . ", `shippingFirstName`";
+		$sql = $sql . ", `shippingLastName`";
+		$sql = $sql . ", `shippingStreet`";
+		$sql = $sql . ", `shippingCity`";
+		$sql = $sql . ", `shippingState`";
+		$sql = $sql . ", `shippingZip`";
+		$sql = $sql . ") VALUES (";
+		$sql = $sql . "NULL, ";
+		$sql = $sql . "'" . returnSessionVariable("username") . "', ";
+		$sql = $sql . "'" . returnSessionVariable("shippingFirstName") . "', ";
+		$sql = $sql . "'" . returnSessionVariable("shippingLastName") . "', ";
+		$sql = $sql . "'" . returnSessionVariable("shippingStreet") . "', ";
+		$sql = $sql . "'" . returnSessionVariable("shippingCity") . "', ";
+		$sql = $sql . "'" . returnSessionVariable("shippingState") . "', ";
+		$sql = $sql . "'" . returnSessionVariable("shippingZip") . "')";	
 		$result = $conn->query($sql);
 	}
 
