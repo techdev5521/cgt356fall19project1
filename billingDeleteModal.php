@@ -12,6 +12,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <input type="hidden" name="cardNumber" id="cardNumber" class="form-control" value="<?php echo $_SESSION['billing'][$i]['cardNumber']; ?>" required>
                     Are you sure you want to delete billing info for that card ending in <strong><?php echo substr($_SESSION['billing'][$i]['cardNumber'], 12); ?></strong> ?
                 </div>
                 <div class="modal-footer">
