@@ -99,7 +99,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="btn btn-info btn-block" data-toggle="modal" data-target="#accountModal">Edit Account Info</button>
+					<button class="btn btn-info btn-block" data-toggle="modal" data-target="#accountModal"><i class="fas fa-pencil-alt mr-2"></i>Edit Account Info</button>
 				</div>
 			</div>
 
@@ -124,7 +124,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="btn btn-info btn-block" data-toggle="modal" data-target="#loginModal">Edit Login Info</button>
+					<button class="btn btn-info btn-block" data-toggle="modal" data-target="#loginModal"><i class="fas fa-pencil-alt mr-2"></i>Edit Login Info</button>
 				</div>
 			</div>
 
@@ -203,7 +203,7 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<td class="text-center text-muted" colspan="5"><?php echo "Retrived " . $result->num_rows . " Cards."; ?></td>
+									<td class="text-center text-muted" colspan="5"><?php echo "Retrieved " . $result->num_rows . " Cards."; ?></td>
 								</tr>
 							</tfoot>
 						</table>
@@ -266,7 +266,7 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<td class="text-center text-muted" colspan="5"><?php echo "Retrived " . $result->num_rows . " shipping addresses."; ?></td>
+									<td class="text-center text-muted" colspan="5"><?php echo "Retrieved " . $result->num_rows . " shipping addresses."; ?></td>
 								</tr>
 							</tfoot>
 						</table>
