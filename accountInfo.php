@@ -162,11 +162,11 @@
 									for($i = 0; $i < $result->num_rows; $i++){
 										$row = $result->fetch_assoc();
 										echo("<tr>");	
-										echo("<td class=\"align-middle\">" . substr($row['cardNumber'], 12) . "</td>"); // Card
-										echo("<td class=\"align-middle\">" . $row['cardType'] . "</td>");	// Card Type
-										echo("<td class=\"align-middle\">" . $row['cardExpirationMonth'] . "/" . $row['cardExpirationYear'] . "</td>"); // Card Expiration
-										echo("<td class=\"align-middle\">" . $row['billingFirstName'] . " " . $row['billingLastName'] . "</td>"); // Name
-										echo("<td class=\"align-middle\">" . $row['billingStreet'] . ", " .  $row['billingCity'] . ", " . $row['billingState'] . " " . $row['billingZip'] . "</td>");	// Address
+										echo("<td>" . substr($row['cardNumber'], 12) . "</td>"); // Card
+										echo("<td>" . $row['cardType'] . "</td>");	// Card Type
+										echo("<td>" . $row['cardExpirationMonth'] . "/" . $row['cardExpirationYear'] . "</td>"); // Card Expiration
+										echo("<td>" . $row['billingFirstName'] . " " . $row['billingLastName'] . "</td>"); // Name
+										echo("<td>" . $row['billingStreet'] . ", " .  $row['billingCity'] . ", " . $row['billingState'] . " " . $row['billingZip'] . "</td>");	// Address
 
 										// Add Action Menu
 										echo("<td>");
@@ -240,11 +240,11 @@
 									for($i = 0; $i < $result->num_rows; $i++){
 										$row = $result->fetch_assoc();
 										echo("<tr>");	
-										echo("<td class=\"align-middle\">" . $row['shippingFirstName'] . " " . $row['shippingLastName'] . "</td>"); // Name
-										echo("<td class=\"align-middle\">" . $row['shippingStreet'] . ", " .  $row['shippingCity'] . ", " . $row['shippingState'] . " " . $row['shippingZip'] . "</td>");	// Address
+										echo("<td>" . $row['shippingFirstName'] . " " . $row['shippingLastName'] . "</td>"); // Name
+										echo("<td>" . $row['shippingStreet'] . ", " .  $row['shippingCity'] . ", " . $row['shippingState'] . " " . $row['shippingZip'] . "</td>");	// Address
 
 										// Add Action Menu
-										echo("<td class=\"align-middle\">");
+										echo("<td>");
 										echo("<div class=\"dropdown show\">");
 										echo("<a class=\"btn btn-info dropdown-toggle\" href=\"#\" role=\"button\" id=\"dropdownMenuLink\" data-toggle=\"dropdown\">");
 										echo("<i class=\"fas fa-cog\"></i>");

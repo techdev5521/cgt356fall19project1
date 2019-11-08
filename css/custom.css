@@ -95,3 +95,8 @@ html, body {
 	max-width: 100%;
 	overflow-x: hidden;
 }
+
+/* Vertically center text in tables where dropdown menus are used */
+.table td{
+	vertical-align: middle !important;
+}
