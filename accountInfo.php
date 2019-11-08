@@ -9,7 +9,7 @@
       href="images/logo.png">
 	
 	<head>
-		<title>GameGo Signup</title>
+		<title>GameGo Account Information</title>
 
 		<!-- Metadata-->
 		<?php include('includes/meta.html'); ?>
