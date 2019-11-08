@@ -82,8 +82,14 @@
 		echo("<i class=\"fas fa-cog\"></i>");
 		echo("</a>");
 		echo("<div class=\"dropdown-menu\">");
-		echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#{$modalType}EditModal{$modalNumber}\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
-		echo("<a class=\"dropdown-item text-danger\" href=\"#\" data-toggle=\"modal\" data-target=\"#{$modalType}DeleteModal{$modalNumber}\"><i class=\"fas fa-trash-alt mr-2\"></i>Delete</a>");
+		echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#{$modalType}EditModal{$modalNumber}\">");
+		echo("<i class=\"fas fa-pencil-alt mr-2\"></i>");
+		echo("Edit");
+		echo("</a>");
+		echo("<a class=\"dropdown-item text-danger\" href=\"#\" data-toggle=\"modal\" data-target=\"#{$modalType}DeleteModal{$modalNumber}\">");
+		echo("<i class=\"fas fa-trash-alt mr-2\"></i>");
+		echo("Delete");
+		echo("</a>");
 		echo("</div>");
 		echo("</div>");
 		echo("</td>");

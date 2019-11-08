@@ -169,8 +169,7 @@
 										echo("<td>" . $row['billingStreet'] . ", " .  $row['billingCity'] . ", " . $row['billingState'] . " " . $row['billingZip'] . "</td>");	// Address
 
 										// Add Action Menu
-										printActionMenu("billing",$i);
-
+										printActionMenu("billing", $i);
 										echo("</tr>");
 
 										$_SESSION['billing'][$i]['cardNumber'] = $row['cardNumber'];
@@ -194,7 +193,7 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<td class="text-center text-muted" colspan="5"><?php echo "Retrieved " . $result->num_rows . " Cards."; ?></td>
+									<td class="text-center text-muted" colspan="6"><?php echo "Retrieved " . $result->num_rows . " Cards."; ?></td>
 								</tr>
 							</tfoot>
 						</table>
@@ -235,20 +234,17 @@
 										echo("<td>" . $row['shippingStreet'] . ", " .  $row['shippingCity'] . ", " . $row['shippingState'] . " " . $row['shippingZip'] . "</td>");	// Address
 
 										// Add Action Menu
-										echo("<td>");
-										echo("<div class=\"dropdown show\">");
-										echo("<a class=\"btn btn-info dropdown-toggle\" href=\"#\" role=\"button\" id=\"dropdownMenuLink\" data-toggle=\"dropdown\">");
-										echo("<i class=\"fas fa-cog\"></i>");
-										echo("</a>");
-										echo("<div class=\"dropdown-menu\">");
-										echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#shippingModal\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
-										echo("<a class=\"dropdown-item text-danger\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\"></i>Delete</a>");
-										echo("</div>");
-										echo("</div>");
-										echo("</td>");
+										printActionMenu("shipping", $i);
 										echo("</tr>");
 
-										echo("</tr>");
+										$_SESSION['shipping'][$i]['shippingFirstName'] = $row['shippingFirstName'];
+										$_SESSION['shipping'][$i]['shippingLastName'] = $row['shippingLastName'];
+										$_SESSION['shipping'][$i]['shippingStreet'] = $row['shippingStreet'];
+										$_SESSION['shipping'][$i]['shippingCity'] = $row['shippingCity'];
+										$_SESSION['shipping'][$i]['shippingState'] = $row['shippingState'];
+										$_SESSION['shipping'][$i]['shippingZip'] = $row['shippingZip'];
+
+										include("shippingEditModal.php");
 									}
 
 									// Close Database Connection
