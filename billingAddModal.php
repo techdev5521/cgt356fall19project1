@@ -208,7 +208,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times mr-2"></i>Close</button>
-                    <button type="submit" class="btn btn-success"><i class="far fa-save mr-2"></i>Save Changes</button>
+                    <button type="submit" class="btn btn-success"><i class="fas fa-plus mr-2"></i>Add Billing Info</button>
                 </div>
             </div>
         </div>

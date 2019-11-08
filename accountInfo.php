@@ -261,6 +261,7 @@
 							</tfoot>
 						</table>
 					</div>
+					<button class="btn btn-info btn-block" data-toggle="modal" data-target="#shippingAddModal"><i class="fas fa-plus mr-2"></i>Add Shipping Info</button>
 				</div>
 				
 				<!-- Include Account Modal -->
@@ -270,7 +271,10 @@
 				<?php include("loginModal.php"); ?>
 
 				<!-- Include Billing Add Modal -->
-				<?php include("billingAddModal.php"); ?>				
+				<?php include("billingAddModal.php"); ?>
+
+				<!-- Include Shipping Add Modal -->
+				<?php include("shippingAddModal.php"); ?>				
 
 			</div>
 		</main>
