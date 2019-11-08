@@ -176,7 +176,7 @@
 										echo("</a>");
 										echo("<div class=\"dropdown-menu\">");
 										echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#billingModal{$i}\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
-										echo("<a class=\"dropdown-item\" style=\"color: #dc3545\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\" style=\"color: #dc3545\"></i>Delete</a>");
+										echo("<a class=\"dropdown-item text-danger\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\"></i>Delete</a>");
 										echo("</div>");
 										echo("</div>");
 										echo("</td>");
@@ -251,7 +251,7 @@
 										echo("</a>");
 										echo("<div class=\"dropdown-menu\">");
 										echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#shippingModal\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
-										echo("<a class=\"dropdown-item\" style=\"color: #dc3545\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\" style=\"color: #dc3545\"></i>Delete</a>");
+										echo("<a class=\"dropdown-item text-danger\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\"></i>Delete</a>");
 										echo("</div>");
 										echo("</div>");
 										echo("</td>");
