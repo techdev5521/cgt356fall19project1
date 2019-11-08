@@ -1,16 +1,19 @@
 <!-- Start billingModal<?php echo $i; ?>.php -->
 
-<!-- Edit Billing Record Modal -->
+<!-- Edit Billing Info Modal -->
+<!-- Creates modal & form-->
 <div class="modal fade" id="billingModal<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="billingModal<?php echo $i; ?>" aria-hidden="true">
     <form action="doBillingUpdate.php" method="post">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="billingModal<?php echo $i; ?>">Billing Information</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="billingModal<?php echo $i; ?>">Billing Information</h5> <!--Title-->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <!--Exit button-->
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+
+                <!--Modal content-->
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
@@ -19,9 +22,12 @@
                                     <h5>Card Information</h5>
                                 </div>
 
+                                <!--Creates card information card-->
                                 <div class="card-body">
                                     <div class="row">
 
+                                        <!--Creates card number field-->
+                                        <!--fills field with credit card information -->
                                         <div class="col-md-8">
                                             <div class="form-group">
                                                 <label for="cardNumber">Card Number</label>
@@ -29,6 +35,8 @@
                                             </div>
                                         </div>
 
+                                        <!--Creates Card type field-->
+                                        <!--Selects the card type-->
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="cardType">Card Type</label>
@@ -41,8 +49,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
 
+                                    <!--Creates card expiration month field-->
+                                    <!--Selects the card expiration month-->
+                                    <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="cardExpirationMonth">Month</label>
@@ -63,6 +73,8 @@
                                             </div>
                                         </div>
 
+                                        <!--Creates card expiration year field-->
+                                        <!--Selects the card expiration year-->
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="cardExpirationYear">Year</label>

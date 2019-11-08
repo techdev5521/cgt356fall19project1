@@ -71,7 +71,7 @@ session_start();
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  value="<?php getSessionVariable("email"); ?>" required>
+                                <input type="email" name="email" id="email" class="form-control" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$"  value="<?php getSessionVariable("email"); ?>" required>
                             </div>
                         </div>
 
