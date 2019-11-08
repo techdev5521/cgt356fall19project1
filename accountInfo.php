@@ -169,7 +169,9 @@
 										echo("<td>" . $row['billingStreet'] . ", " .  $row['billingCity'] . ", " . $row['billingState'] . " " . $row['billingZip'] . "</td>");	// Address
 
 										// Add Action Menu
-										printActionMenu($i);
+										printActionMenu("billing",$i);
+
+										echo("</tr>");
 
 										$_SESSION['billing'][$i]['cardNumber'] = $row['cardNumber'];
 										$_SESSION['billing'][$i]['cardType'] = $row['cardType'];

@@ -72,21 +72,21 @@
 	 *
 	 * Created dropdown menu with edit and delete buttons pointing to corresponding modals
 	 *
+	 * @param String $modalType Type of modal to be opened: "billing" | "shipping"
 	 * @param int $modalNumber The number of the modal to be opened on button click
 	 */
-	function printActionMenu($modalNumber){
+	function printActionMenu($modalType, $modalNumber){
 		echo("<td>");
 		echo("<div class=\"dropdown show\">");
 		echo("<a class=\"btn btn-info dropdown-toggle\" href=\"#\" role=\"button\" id=\"dropdownMenuLink\" data-toggle=\"dropdown\">");
 		echo("<i class=\"fas fa-cog\"></i>");
 		echo("</a>");
 		echo("<div class=\"dropdown-menu\">");
-		echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#billingEditModal{$modalNumber}\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
-		echo("<a class=\"dropdown-item text-danger\" href=\"#\" data-toggle=\"modal\" data-target=\"#billingDeleteModal{$modalNumber}\"><i class=\"fas fa-trash-alt mr-2\"></i>Delete</a>");
+		echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#{$modalType}EditModal{$modalNumber}\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
+		echo("<a class=\"dropdown-item text-danger\" href=\"#\" data-toggle=\"modal\" data-target=\"#{$modalType}DeleteModal{$modalNumber}\"><i class=\"fas fa-trash-alt mr-2\"></i>Delete</a>");
 		echo("</div>");
 		echo("</div>");
 		echo("</td>");
-		echo("</tr>");
 	}
 
 ?>
