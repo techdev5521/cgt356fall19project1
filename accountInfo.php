@@ -199,6 +199,7 @@
 							</tfoot>
 						</table>
 					</div>
+					<button class="btn btn-info btn-block" data-toggle="modal" data-target="#billingAddModal"><i class="fas fa-plus mr-2"></i>Add Billing Info</button>
 				</div>
 			</div>
 
@@ -267,6 +268,9 @@
 
 				<!-- Include Login Modal -->
 				<?php include("loginModal.php"); ?>
+
+				<!-- Include Billing Add Modal -->
+				<?php include("billingAddModal.php"); ?>				
 
 			</div>
 		</main>
