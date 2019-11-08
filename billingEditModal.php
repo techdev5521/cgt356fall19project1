@@ -31,7 +31,8 @@
                                         <div class="col-md-8">
                                             <div class="form-group">
                                                 <label for="cardNumber">Card Number</label>
-                                                <input type="number" name="cardNumber" id="cardNumber" class="form-control" value="<?php echo $_SESSION['billing'][$i]['cardNumber']; ?>" required>
+                                                <input type="number" name="cardNumber" id="cardNumber" class="form-control" value="<?php echo $_SESSION['billing'][$i]['cardNumber']; ?>" required disabled>
+                                                <input type="hidden" name="cardNumber" id="cardNumber" class="form-control" value="<?php echo $_SESSION['billing'][$i]['cardNumber']; ?>" required>
                                             </div>
                                         </div>
 
