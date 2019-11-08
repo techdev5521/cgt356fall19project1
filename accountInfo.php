@@ -169,18 +169,7 @@
 										echo("<td>" . $row['billingStreet'] . ", " .  $row['billingCity'] . ", " . $row['billingState'] . " " . $row['billingZip'] . "</td>");	// Address
 
 										// Add Action Menu
-										echo("<td>");
-										echo("<div class=\"dropdown show\">");
-										echo("<a class=\"btn btn-info dropdown-toggle\" href=\"#\" role=\"button\" id=\"dropdownMenuLink\" data-toggle=\"dropdown\">");
-										echo("<i class=\"fas fa-cog\"></i>");
-										echo("</a>");
-										echo("<div class=\"dropdown-menu\">");
-										echo("<a class=\"dropdown-item\" href=\"#\" data-toggle=\"modal\" data-target=\"#billingModal{$i}\"><i class=\"fas fa-pencil-alt mr-2\"></i>Edit</a>");
-										echo("<a class=\"dropdown-item text-danger\" href=\"#\"><i class=\"fas fa-trash-alt mr-2\"></i>Delete</a>");
-										echo("</div>");
-										echo("</div>");
-										echo("</td>");
-										echo("</tr>");
+										printActionMenu($i);
 
 										$_SESSION['billing'][$i]['cardNumber'] = $row['cardNumber'];
 										$_SESSION['billing'][$i]['cardType'] = $row['cardType'];

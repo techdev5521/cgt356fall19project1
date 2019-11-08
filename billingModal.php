@@ -1,12 +1,12 @@
-<!-- Start billingModal<?php echo $i; ?>.php -->
+<!-- Start billingEditModal<?php echo $i; ?>.php -->
 
 <!-- Edit Billing Record Modal -->
-<div class="modal fade" id="billingModal<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="billingModal<?php echo $i; ?>" aria-hidden="true">
+<div class="modal fade" id="billingEditModal<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="billingEditModal<?php echo $i; ?>" aria-hidden="true">
     <form action="doBillingUpdate.php" method="post">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="billingModal<?php echo $i; ?>">Billing Information</h5>
+                    <h5 class="modal-title" id="billingEditModal<?php echo $i; ?>">Billing Information</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -203,4 +203,4 @@
     </form>
 </div>
 
-<!-- End billingModal<?php echo $i; ?>.php -->
+<!-- End billingEditModal<?php echo $i; ?>.php -->
