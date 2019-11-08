@@ -153,10 +153,12 @@ session_start();
 					<div class="card-deck">
 						<div class="card box-shadow mb-3">
 							<div class="card-header text-center">
-								<h5>High Reusable Code Structure</h5>
+								<h5>Reusable Code Structure and Data Sanitization</h5>
 							</div>
 							<div class="card-body">
 								<p class="card-text">Using PHP's <code>include('');</code> function we were able to seperate files into seperate collections of code seperated by language and reduce overall card and increase the readability/flexibility of each individual page.</p>
+								<hr>
+								<p class="card-text">We also sanitize our data input on all logic pages by looping through the <code>$_POST</code> cariable and reqriting all values after passing through <code>mysqli::real_escape_string()</code>.</p>
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item">See <code>includes/*</code> and <code>*modal.php</code> files.</li>
