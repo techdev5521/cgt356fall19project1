@@ -203,7 +203,7 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<td class="text-center text-muted" colspan="5"><?php echo "Retrived " . $result->num_rows . " Cards."; ?></td>
+									<td class="text-center text-muted" colspan="6"><?php echo "Retrived " . $result->num_rows . " Cards."; ?></td>
 								</tr>
 							</tfoot>
 						</table>
@@ -266,7 +266,7 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<td class="text-center text-muted" colspan="5"><?php echo "Retrived " . $result->num_rows . " shipping addresses."; ?></td>
+									<td class="text-center text-muted" colspan="3"><?php echo "Retrived " . $result->num_rows . " shipping addresses."; ?></td>
 								</tr>
 							</tfoot>
 						</table>
