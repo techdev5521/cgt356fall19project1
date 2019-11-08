@@ -183,7 +183,7 @@
 										$_SESSION['billing'][$i]['billingState'] = $row['billingState'];
 										$_SESSION['billing'][$i]['billingZip'] = $row['billingZip'];
 
-										include("billingModal.php");
+										include("billingEditModal.php");
 									}
 
 									// Close Database Connection
@@ -267,9 +267,6 @@
 
 				<!-- Include Login Modal -->
 				<?php include("loginModal.php"); ?>
-
-				<!-- Include Billing Modal -->
-				<?php include("billingModal.php"); ?>
 
 			</div>
 		</main>
